@@ -5,9 +5,7 @@
   font-synthesis: none;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -35,12 +33,7 @@ body {
   align-items: center;
 }
 
-h1,
-h2,
-h3,
-p {
-  margin-top: 0;
-}
+h1, h2, h3, p { margin-top: 0; }
 
 h1 {
   margin-bottom: 10px;
@@ -73,9 +66,7 @@ h3 {
   color: #56688f;
 }
 
-.topbar .eyebrow {
-  color: #9eb1df;
-}
+.topbar .eyebrow { color: #9eb1df; }
 
 .status-chip,
 .badge,
@@ -94,9 +85,7 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
-.hero {
-  margin-top: -18px;
-}
+.hero { margin-top: -18px; }
 
 .notice {
   padding: 16px 18px;
@@ -122,8 +111,7 @@ label {
   font-size: 0.92rem;
 }
 
-input,
-select {
+input, select {
   width: 100%;
   border: 1px solid #ccd5e4;
   background: white;
@@ -145,13 +133,9 @@ select {
   margin-top: 18px;
 }
 
-.section {
-  padding: 46px 0;
-}
+.section { padding: 46px 0; }
 
-.section-heading {
-  margin-bottom: 20px;
-}
+.section-heading { margin-bottom: 20px; }
 
 .section-heading p:last-child {
   margin-bottom: 0;
@@ -160,7 +144,7 @@ select {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -172,9 +156,7 @@ select {
   box-shadow: 0 7px 20px rgba(26, 39, 71, 0.045);
 }
 
-.card[hidden] {
-  display: none;
-}
+.card[hidden] { display: none; }
 
 .badge {
   padding: 6px 9px;
@@ -182,22 +164,18 @@ select {
   color: #304e8f;
 }
 
-.verification {
-  color: #667085;
-}
+.verification { color: #35704a; }
 
 .card > p {
   color: #667085;
   line-height: 1.55;
 }
 
-dl {
-  margin: 20px 0;
-}
+dl { margin: 20px 0; }
 
 dl > div {
   display: grid;
-  grid-template-columns: 86px 1fr;
+  grid-template-columns: 150px 1fr;
   gap: 10px;
   padding: 8px 0;
   border-top: 1px solid #edf0f5;
@@ -215,7 +193,7 @@ dd {
 }
 
 .card__footer {
-  align-items: flex-end;
+  align-items: center;
   border-top: 1px solid #edf0f5;
   padding-top: 16px;
 }
@@ -225,14 +203,19 @@ dd {
   color: #8b95a7;
 }
 
-button {
-  border: 0;
-  background: #edf0f5;
-  color: #758095;
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  background: #17213c;
+  color: white;
   border-radius: 9px;
-  padding: 9px 10px;
-  font-weight: 700;
+  padding: 10px 12px;
+  font-weight: 750;
+  font-size: 0.86rem;
 }
+
+.source-link:hover { text-decoration: underline; }
 
 .roadmap {
   display: grid;
@@ -277,7 +260,10 @@ footer {
     flex-direction: column;
   }
 
-  .topbar {
-    padding-top: 38px;
+  dl > div {
+    grid-template-columns: 1fr;
+    gap: 3px;
   }
+
+  .topbar { padding-top: 38px; }
 }

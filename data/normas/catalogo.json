@@ -1,0 +1,25 @@
+[
+  {
+    "id": "BOE-A-2023-7500",
+    "titulo": "Ley Orgánica 2/2023, de 22 de marzo, del Sistema Universitario",
+    "descripcion": "Norma básica estatal que regula el sistema universitario español y establece, entre otras materias, el marco general de organización, autonomía, estudiantado, personal y gobernanza universitaria.",
+    "ambito": "Estado",
+    "tipo": "Ley Orgánica",
+    "estado": "Vigente",
+    "verificacion": "Verificada · BOE",
+    "materias": [
+      "Sistema universitario",
+      "Estudiantes",
+      "Gobernanza",
+      "Profesorado",
+      "Universidades"
+    ],
+    "publicacion": "23/03/2023",
+    "entrada_vigor": "12/04/2023",
+    "ultima_actualizacion": "02/08/2024",
+    "fuente": "BOE",
+    "url_oficial": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-7500",
+    "eli": "https://www.boe.es/eli/es/lo/2023/03/22/2/con",
+    "fecha_verificacion": "19/09/2026"
+  }
+]

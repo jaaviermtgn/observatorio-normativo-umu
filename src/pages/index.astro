@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import normas from '../../data/normas/ejemplos.json';
+import normas from '../../data/normas/catalogo.json';
 
 const materias = [...new Set(normas.flatMap((norma) => norma.materias))].sort();
 const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
@@ -12,7 +12,7 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
     <meta name="viewport" content="width=device-width" />
     <meta
       name="description"
-      content="Prototipo del Observatorio Normativo Universitario de la Universidad de Murcia"
+      content="Observatorio Normativo Universitario: consulta y seguimiento de normativa universitaria relevante para la Universidad de Murcia."
     />
     <title>Observatorio Normativo Universitario</title>
   </head>
@@ -21,21 +21,21 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
     <header class="topbar">
       <div class="container topbar__inner">
         <div>
-          <p class="eyebrow">PROTOTIPO · FASE 2</p>
+          <p class="eyebrow">OBSERVATORIO NORMATIVO</p>
           <h1>Observatorio Normativo Universitario</h1>
           <p class="subtitle">
             Consulta, clasificación y seguimiento de normativa universitaria.
           </p>
         </div>
-        <span class="status-chip">Maqueta funcional</span>
+        <span class="status-chip">Catálogo en construcción</span>
       </div>
     </header>
 
     <main>
       <section class="hero container">
         <div class="notice">
-          <strong>Importante:</strong>
-          esta versión contiene registros de prueba y todavía no constituye una base jurídica verificada.
+          <strong>Información jurídica:</strong>
+          <span> el Observatorio enlaza siempre a la fuente oficial. Los textos consolidados del BOE tienen carácter informativo.</span>
         </div>
 
         <div class="search-panel">
@@ -43,7 +43,7 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
           <input
             id="search"
             type="search"
-            placeholder="Ej.: evaluación, estudiantes, universidad..."
+            placeholder="Ej.: evaluación, estudiantes, gobernanza, profesorado..."
             autocomplete="off"
           />
 
@@ -79,7 +79,7 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
       <section class="container section">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">CATÁLOGO</p>
+            <p class="eyebrow">CATÁLOGO JURÍDICO</p>
             <h2>Normas</h2>
           </div>
           <p id="counter">{normas.length} resultados</p>
@@ -113,14 +113,28 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
                   <dd>{norma.estado}</dd>
                 </div>
                 <div>
+                  <dt>Publicación</dt>
+                  <dd>{norma.publicacion}</dd>
+                </div>
+                <div>
+                  <dt>Entrada en vigor</dt>
+                  <dd>{norma.entrada_vigor}</dd>
+                </div>
+                <div>
+                  <dt>Última actualización BOE</dt>
+                  <dd>{norma.ultima_actualizacion}</dd>
+                </div>
+                <div>
                   <dt>Materias</dt>
                   <dd>{norma.materias.join(', ')}</dd>
                 </div>
               </dl>
 
               <div class="card__footer">
-                <span>Registro de prueba</span>
-                <button type="button" disabled>Ficha completa · próxima fase</button>
+                <span>Verificada: {norma.fecha_verificacion}</span>
+                <a class="source-link" href={norma.url_oficial} target="_blank" rel="noreferrer">
+                  Fuente oficial · BOE ↗
+                </a>
               </div>
             </article>
           ))}
@@ -134,23 +148,23 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
       <section class="container section">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">PRÓXIMA CAPA</p>
-            <h2>Qué añadiremos después</h2>
+            <p class="eyebrow">SIGUIENTE FASE</p>
+            <h2>Qué construiremos ahora</h2>
           </div>
         </div>
 
         <div class="roadmap">
-          <div><strong>1.</strong> Fichas individuales y fuentes oficiales.</div>
-          <div><strong>2.</strong> Catálogo jurídico real y verificado.</div>
-          <div><strong>3.</strong> Vigilancia automática de BOE, BORM y UMU.</div>
-          <div><strong>4.</strong> Historial “antes / ahora” de cada cambio.</div>
+          <div><strong>1.</strong> Ficha individual completa de cada norma.</div>
+          <div><strong>2.</strong> Historial de versiones y normas modificadoras.</div>
+          <div><strong>3.</strong> Vigilancia automática de la API oficial del BOE.</div>
+          <div><strong>4.</strong> Catálogo autonómico y normativa interna de la UMU.</div>
         </div>
       </section>
     </main>
 
     <footer>
       <div class="container">
-        Proyecto en desarrollo · Observatorio Normativo Universitario
+        Observatorio Normativo Universitario · Proyecto en desarrollo
       </div>
     </footer>
 
