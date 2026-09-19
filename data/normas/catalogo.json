@@ -26,7 +26,7 @@
     "url_publicacion": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-7500",
     "eli": "https://www.boe.es/eli/es/lo/2023/03/22/2/con",
     "fecha_verificacion": "19/09/2026",
-    "seguimiento": "Preparada para vigilancia automática",
+    "seguimiento": "Vigilancia automática BOE activa",
     "alcance_historial": "El historial recoge las modificaciones y correcciones expresas identificadas en la legislación consolidada del BOE. No sustituye a la publicación oficial ni incorpora por sí solo eventuales efectos tácitos que exijan interpretación jurídica.",
     "historial": [
       {
@@ -79,6 +79,8 @@
         "boe_id": "BOE-A-2023-7500",
         "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-7500"
       }
-    ]
+    ],
+    "monitorizado_boe": true,
+    "cambios_automaticos": []
   }
 ]

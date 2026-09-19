@@ -1384,3 +1384,132 @@ footer {
     border-top: 3px solid var(--umu-red);
   }
 }
+
+
+/* =========================================================
+   FASE 7 · VIGILANCIA AUTOMÁTICA BOE
+   ========================================================= */
+
+.monitor-status--active span {
+  color: #98d5b0;
+}
+
+.auto-changes {
+  display: grid;
+  gap: 18px;
+}
+
+.auto-change-card {
+  background: white;
+  border: 1px solid rgba(0, 32, 40, 0.14);
+  border-top: 4px solid var(--umu-red);
+  padding: 22px;
+}
+
+.auto-change-card__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.auto-change-card__top > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auto-change-card__top span {
+  color: #758184;
+  font-size: 0.75rem;
+}
+
+.auto-change-card__top strong {
+  font-size: 1.05rem;
+}
+
+.auto-change-card__top em {
+  padding: 5px 8px;
+  background: #fff2cf;
+  color: #765c12;
+  font-size: 0.68rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.auto-modifier {
+  margin: 15px 0 0;
+  color: #5f6c6f;
+  font-size: 0.8rem;
+}
+
+.auto-blocks {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.auto-blocks details {
+  border: 1px solid #dfe2df;
+  background: #fbfbfa;
+}
+
+.auto-blocks summary {
+  cursor: pointer;
+  padding: 13px 15px;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.before-after {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: #dfe2df;
+  border-top: 1px solid #dfe2df;
+}
+
+.before-after > div {
+  min-width: 0;
+  background: white;
+  padding: 15px;
+}
+
+.before-after span {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--umu-red);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.before-after pre {
+  margin: 0;
+  max-height: 420px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #344447;
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
+.truncation-note {
+  margin: 0;
+  padding: 10px 15px 13px;
+  color: #7a6861;
+  font-size: 0.72rem;
+}
+
+@media (max-width: 700px) {
+  .auto-change-card__top {
+    flex-direction: column;
+  }
+
+  .before-after {
+    grid-template-columns: 1fr;
+  }
+}

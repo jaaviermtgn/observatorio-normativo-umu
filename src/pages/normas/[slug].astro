@@ -104,6 +104,7 @@ const numeroCambios = norma.historial.filter((item) => item.tipo === 'Modificaci
             <a href="#datos">Datos básicos</a>
             <a href="#materias">Materias</a>
             <a href="#historial">Historial normativo</a>
+            {norma.cambios_automaticos?.length > 0 && <a href="#detecciones">Detecciones automáticas</a>}
             <a href="#fuentes">Fuentes oficiales</a>
             <a href="#seguimiento">Seguimiento</a>
           </nav>
@@ -225,6 +226,65 @@ const numeroCambios = norma.historial.filter((item) => item.tipo === 'Modificaci
             </ol>
           </section>
 
+
+          {norma.cambios_automaticos?.length > 0 && (
+            <section class="detail-section" id="detecciones">
+              <div class="detail-section__heading">
+                <p class="eyebrow eyebrow--red">DETECCIÓN AUTOMÁTICA</p>
+                <h2>Cambios detectados por el monitor BOE</h2>
+                <p class="section-description">
+                  Estos registros los genera automáticamente el sistema a partir de las
+                  nuevas versiones de bloques publicadas por la AEBOE y quedan pendientes
+                  de revisión humana antes de integrarse en el historial jurídico curado.
+                </p>
+              </div>
+
+              <div class="auto-changes">
+                {norma.cambios_automaticos.map((cambio) => (
+                  <article class="auto-change-card">
+                    <div class="auto-change-card__top">
+                      <div>
+                        <span>{cambio.fecha_publicacion || cambio.detectado_el}</span>
+                        <strong>{cambio.resumen}</strong>
+                      </div>
+                      <em>{cambio.estado_revision}</em>
+                    </div>
+
+                    {cambio.norma_modificadora_id && (
+                      <p class="auto-modifier">
+                        Norma modificadora: <strong>{cambio.norma_modificadora_id}</strong>
+                      </p>
+                    )}
+
+                    <div class="auto-blocks">
+                      {cambio.bloques.map((bloque) => (
+                        <details>
+                          <summary>{bloque.bloque_titulo}</summary>
+                          <div class="before-after">
+                            <div>
+                              <span>Antes</span>
+                              <pre>{bloque.antes || 'No existe una versión anterior en el bloque.'}</pre>
+                            </div>
+                            <div>
+                              <span>Ahora</span>
+                              <pre>{bloque.ahora || 'Texto no disponible.'}</pre>
+                            </div>
+                          </div>
+                          {bloque.texto_truncado && (
+                            <p class="truncation-note">
+                              El bloque es muy extenso y se ha limitado su copia local. La
+                              fuente oficial del BOE conserva el texto íntegro.
+                            </p>
+                          )}
+                        </details>
+                      ))}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+          )}
+
           <section class="detail-section" id="fuentes">
             <div class="detail-section__heading">
               <p class="eyebrow">DOCUMENTACIÓN</p>
@@ -264,15 +324,16 @@ const numeroCambios = norma.historial.filter((item) => item.tipo === 'Modificaci
                 <p class="eyebrow eyebrow--red">VIGILANCIA NORMATIVA</p>
                 <h2>{norma.seguimiento}</h2>
                 <p>
-                  Esta ficha ya tiene la estructura necesaria para recibir cambios de forma
-                  automática. En la siguiente fase conectaremos el catálogo con la API
-                  oficial de legislación consolidada del BOE.
+                  Esta ficha está incluida en la vigilancia automática. El robot compara
+                  diariamente el índice de bloques de la legislación consolidada del BOE y,
+                  cuando detecta una nueva versión textual, conserva la versión anterior y
+                  la nueva para facilitar su revisión.
                 </p>
               </div>
 
-              <div class="monitor-status">
-                <span>PENDIENTE</span>
-                <strong>Automatización BOE</strong>
+              <div class="monitor-status monitor-status--active">
+                <span>ACTIVA</span>
+                <strong>Comprobación diaria del BOE</strong>
               </div>
             </div>
           </section>
