@@ -1,4 +1,672 @@
 {
   "version": 1,
-  "normas": {}
+  "normas": {
+    "BOE-A-2023-7500": {
+      "fecha_actualizacion_registro": "20260918T062653Z",
+      "estado_consolidacion": "Finalizado",
+      "vigencia_agotada": "N",
+      "bloques": {
+        "a1": {
+          "titulo": "Artículo 1",
+          "fecha_actualizacion": "20230323"
+        },
+        "a1-10": {
+          "titulo": "Artículo 18",
+          "fecha_actualizacion": "20230323"
+        },
+        "a1-11": {
+          "titulo": "Artículo 19",
+          "fecha_actualizacion": "20230323"
+        },
+        "a1-12": {
+          "titulo": "Artículo 100",
+          "fecha_actualizacion": "20230323"
+        },
+        "a1-2": {
+          "titulo": "Artículo 10",
+          "fecha_actualizacion": "20230323"
+        },
+        "a1-3": {
+          "titulo": "Artículo 11",
+          "fecha_actualizacion": "20230323"
+        },
+        "a1-4": {
+          "titulo": "Artículo 12",
+          "fecha_actualizacion": "20230323"
+        },
+        "a1-5": {
+          "titulo": "Artículo 13",
+          "fecha_actualizacion": "20230323"
+        },
+        "a1-6": {
+          "titulo": "Artículo 14",
+          "fecha_actualizacion": "20230323"
+        },
+        "a1-7": {
+          "titulo": "Artículo 15",
+          "fecha_actualizacion": "20230323"
+        },
+        "a1-8": {
+          "titulo": "Artículo 16",
+          "fecha_actualizacion": "20230323"
+        },
+        "a1-9": {
+          "titulo": "Artículo 17",
+          "fecha_actualizacion": "20240802"
+        },
+        "a2": {
+          "titulo": "Artículo 2",
+          "fecha_actualizacion": "20230323"
+        },
+        "a2-10": {
+          "titulo": "Artículo 28",
+          "fecha_actualizacion": "20230323"
+        },
+        "a2-11": {
+          "titulo": "Artículo 29",
+          "fecha_actualizacion": "20230323"
+        },
+        "a2-2": {
+          "titulo": "Artículo 20",
+          "fecha_actualizacion": "20230323"
+        },
+        "a2-3": {
+          "titulo": "Artículo 21",
+          "fecha_actualizacion": "20230323"
+        },
+        "a2-4": {
+          "titulo": "Artículo 22",
+          "fecha_actualizacion": "20230323"
+        },
+        "a2-5": {
+          "titulo": "Artículo 23",
+          "fecha_actualizacion": "20230323"
+        },
+        "a2-6": {
+          "titulo": "Artículo 24",
+          "fecha_actualizacion": "20230323"
+        },
+        "a2-7": {
+          "titulo": "Artículo 25",
+          "fecha_actualizacion": "20230323"
+        },
+        "a2-8": {
+          "titulo": "Artículo 26",
+          "fecha_actualizacion": "20230323"
+        },
+        "a2-9": {
+          "titulo": "Artículo 27",
+          "fecha_actualizacion": "20230323"
+        },
+        "a3": {
+          "titulo": "Artículo 3",
+          "fecha_actualizacion": "20230323"
+        },
+        "a3-10": {
+          "titulo": "Artículo 38",
+          "fecha_actualizacion": "20230323"
+        },
+        "a3-11": {
+          "titulo": "Artículo 39",
+          "fecha_actualizacion": "20230323"
+        },
+        "a3-2": {
+          "titulo": "Artículo 30",
+          "fecha_actualizacion": "20230323"
+        },
+        "a3-3": {
+          "titulo": "Artículo 31",
+          "fecha_actualizacion": "20230323"
+        },
+        "a3-4": {
+          "titulo": "Artículo 32",
+          "fecha_actualizacion": "20230323"
+        },
+        "a3-5": {
+          "titulo": "Artículo 33",
+          "fecha_actualizacion": "20230323"
+        },
+        "a3-6": {
+          "titulo": "Artículo 34",
+          "fecha_actualizacion": "20230323"
+        },
+        "a3-7": {
+          "titulo": "Artículo 35",
+          "fecha_actualizacion": "20230323"
+        },
+        "a3-8": {
+          "titulo": "Artículo 36",
+          "fecha_actualizacion": "20230323"
+        },
+        "a3-9": {
+          "titulo": "Artículo 37",
+          "fecha_actualizacion": "20230323"
+        },
+        "a4": {
+          "titulo": "Artículo 4",
+          "fecha_actualizacion": "20230323"
+        },
+        "a4-10": {
+          "titulo": "Artículo 48",
+          "fecha_actualizacion": "20230323"
+        },
+        "a4-11": {
+          "titulo": "Artículo 49",
+          "fecha_actualizacion": "20230323"
+        },
+        "a4-2": {
+          "titulo": "Artículo 40",
+          "fecha_actualizacion": "20230323"
+        },
+        "a4-3": {
+          "titulo": "Artículo 41",
+          "fecha_actualizacion": "20230323"
+        },
+        "a4-4": {
+          "titulo": "Artículo 42",
+          "fecha_actualizacion": "20230323"
+        },
+        "a4-5": {
+          "titulo": "Artículo 43",
+          "fecha_actualizacion": "20230323"
+        },
+        "a4-6": {
+          "titulo": "Artículo 44",
+          "fecha_actualizacion": "20230323"
+        },
+        "a4-7": {
+          "titulo": "Artículo 45",
+          "fecha_actualizacion": "20230323"
+        },
+        "a4-8": {
+          "titulo": "Artículo 46",
+          "fecha_actualizacion": "20230323"
+        },
+        "a4-9": {
+          "titulo": "Artículo 47",
+          "fecha_actualizacion": "20230323"
+        },
+        "a5": {
+          "titulo": "Artículo 5",
+          "fecha_actualizacion": "20230323"
+        },
+        "a5-10": {
+          "titulo": "Artículo 58",
+          "fecha_actualizacion": "20230323"
+        },
+        "a5-11": {
+          "titulo": "Artículo 59",
+          "fecha_actualizacion": "20230323"
+        },
+        "a5-2": {
+          "titulo": "Artículo 50",
+          "fecha_actualizacion": "20230323"
+        },
+        "a5-3": {
+          "titulo": "Artículo 51",
+          "fecha_actualizacion": "20230323"
+        },
+        "a5-4": {
+          "titulo": "Artículo 52",
+          "fecha_actualizacion": "20230323"
+        },
+        "a5-5": {
+          "titulo": "Artículo 53",
+          "fecha_actualizacion": "20230323"
+        },
+        "a5-6": {
+          "titulo": "Artículo 54",
+          "fecha_actualizacion": "20230323"
+        },
+        "a5-7": {
+          "titulo": "Artículo 55",
+          "fecha_actualizacion": "20230323"
+        },
+        "a5-8": {
+          "titulo": "Artículo 56",
+          "fecha_actualizacion": "20230323"
+        },
+        "a5-9": {
+          "titulo": "Artículo 57",
+          "fecha_actualizacion": "20230323"
+        },
+        "a6": {
+          "titulo": "Artículo 6",
+          "fecha_actualizacion": "20230323"
+        },
+        "a6-10": {
+          "titulo": "Artículo 68",
+          "fecha_actualizacion": "20230323"
+        },
+        "a6-11": {
+          "titulo": "Artículo 69",
+          "fecha_actualizacion": "20230323"
+        },
+        "a6-2": {
+          "titulo": "Artículo 60",
+          "fecha_actualizacion": "20230323"
+        },
+        "a6-3": {
+          "titulo": "Artículo 61",
+          "fecha_actualizacion": "20230323"
+        },
+        "a6-4": {
+          "titulo": "Artículo 62",
+          "fecha_actualizacion": "20230323"
+        },
+        "a6-5": {
+          "titulo": "Artículo 63",
+          "fecha_actualizacion": "20230323"
+        },
+        "a6-6": {
+          "titulo": "Artículo 64",
+          "fecha_actualizacion": "20230323"
+        },
+        "a6-7": {
+          "titulo": "Artículo 65",
+          "fecha_actualizacion": "20230323"
+        },
+        "a6-8": {
+          "titulo": "Artículo 66",
+          "fecha_actualizacion": "20230323"
+        },
+        "a6-9": {
+          "titulo": "Artículo 67",
+          "fecha_actualizacion": "20230323"
+        },
+        "a7": {
+          "titulo": "Artículo 7",
+          "fecha_actualizacion": "20230323"
+        },
+        "a7-10": {
+          "titulo": "Artículo 78",
+          "fecha_actualizacion": "20230323"
+        },
+        "a7-11": {
+          "titulo": "Artículo 79",
+          "fecha_actualizacion": "20230323"
+        },
+        "a7-2": {
+          "titulo": "Artículo 70",
+          "fecha_actualizacion": "20230323"
+        },
+        "a7-3": {
+          "titulo": "Artículo 71",
+          "fecha_actualizacion": "20230323"
+        },
+        "a7-4": {
+          "titulo": "Artículo 72",
+          "fecha_actualizacion": "20230323"
+        },
+        "a7-5": {
+          "titulo": "Artículo 73",
+          "fecha_actualizacion": "20230323"
+        },
+        "a7-6": {
+          "titulo": "Artículo 74",
+          "fecha_actualizacion": "20230323"
+        },
+        "a7-7": {
+          "titulo": "Artículo 75",
+          "fecha_actualizacion": "20230323"
+        },
+        "a7-8": {
+          "titulo": "Artículo 76",
+          "fecha_actualizacion": "20230323"
+        },
+        "a7-9": {
+          "titulo": "Artículo 77",
+          "fecha_actualizacion": "20230323"
+        },
+        "a8": {
+          "titulo": "Artículo 8",
+          "fecha_actualizacion": "20230323"
+        },
+        "a8-10": {
+          "titulo": "Artículo 88",
+          "fecha_actualizacion": "20230323"
+        },
+        "a8-11": {
+          "titulo": "Artículo 89",
+          "fecha_actualizacion": "20230323"
+        },
+        "a8-2": {
+          "titulo": "Artículo 80",
+          "fecha_actualizacion": "20230323"
+        },
+        "a8-3": {
+          "titulo": "Artículo 81",
+          "fecha_actualizacion": "20230323"
+        },
+        "a8-4": {
+          "titulo": "Artículo 82",
+          "fecha_actualizacion": "20230323"
+        },
+        "a8-5": {
+          "titulo": "Artículo 83",
+          "fecha_actualizacion": "20230323"
+        },
+        "a8-6": {
+          "titulo": "Artículo 84",
+          "fecha_actualizacion": "20230323"
+        },
+        "a8-7": {
+          "titulo": "Artículo 85",
+          "fecha_actualizacion": "20230323"
+        },
+        "a8-8": {
+          "titulo": "Artículo 86",
+          "fecha_actualizacion": "20230323"
+        },
+        "a8-9": {
+          "titulo": "Artículo 87",
+          "fecha_actualizacion": "20230323"
+        },
+        "a9": {
+          "titulo": "Artículo 9",
+          "fecha_actualizacion": "20230323"
+        },
+        "a9-10": {
+          "titulo": "Artículo 98",
+          "fecha_actualizacion": "20230323"
+        },
+        "a9-11": {
+          "titulo": "Artículo 99",
+          "fecha_actualizacion": "20230323"
+        },
+        "a9-2": {
+          "titulo": "Artículo 90",
+          "fecha_actualizacion": "20230323"
+        },
+        "a9-3": {
+          "titulo": "Artículo 91",
+          "fecha_actualizacion": "20230323"
+        },
+        "a9-4": {
+          "titulo": "Artículo 92",
+          "fecha_actualizacion": "20230323"
+        },
+        "a9-5": {
+          "titulo": "Artículo 93",
+          "fecha_actualizacion": "20230323"
+        },
+        "a9-6": {
+          "titulo": "Artículo 94",
+          "fecha_actualizacion": "20230323"
+        },
+        "a9-7": {
+          "titulo": "Artículo 95",
+          "fecha_actualizacion": "20230323"
+        },
+        "a9-8": {
+          "titulo": "Artículo 96",
+          "fecha_actualizacion": "20230323"
+        },
+        "a9-9": {
+          "titulo": "Artículo 97",
+          "fecha_actualizacion": "20230323"
+        },
+        "ci": {
+          "titulo": "CAPÍTULO I",
+          "fecha_actualizacion": "20230323"
+        },
+        "ci-2": {
+          "titulo": "CAPÍTULO II",
+          "fecha_actualizacion": "20230323"
+        },
+        "ci-3": {
+          "titulo": "CAPÍTULO III",
+          "fecha_actualizacion": "20230323"
+        },
+        "ci-4": {
+          "titulo": "CAPÍTULO IV",
+          "fecha_actualizacion": "20230323"
+        },
+        "cv": {
+          "titulo": "CAPÍTULO V",
+          "fecha_actualizacion": "20230323"
+        },
+        "da": {
+          "titulo": "Disposición adicional primera",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-10": {
+          "titulo": "Disposición adicional décima",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-11": {
+          "titulo": "Disposición adicional décima primera",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-12": {
+          "titulo": "Disposición adicional décima segunda",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-13": {
+          "titulo": "Disposición adicional décima tercera",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-14": {
+          "titulo": "Disposición adicional décima cuarta",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-15": {
+          "titulo": "Disposición adicional décima quinta",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-16": {
+          "titulo": "Disposición adicional décima sexta",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-17": {
+          "titulo": "Disposición adicional décima séptima",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-2": {
+          "titulo": "Disposición adicional segunda",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-3": {
+          "titulo": "Disposición adicional tercera",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-4": {
+          "titulo": "Disposición adicional cuarta",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-5": {
+          "titulo": "Disposición adicional quinta",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-6": {
+          "titulo": "Disposición adicional sexta",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-7": {
+          "titulo": "Disposición adicional séptima",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-8": {
+          "titulo": "Disposición adicional octava",
+          "fecha_actualizacion": "20230323"
+        },
+        "da-9": {
+          "titulo": "Disposición adicional novena",
+          "fecha_actualizacion": "20230323"
+        },
+        "dd": {
+          "titulo": "Disposición derogatoria única",
+          "fecha_actualizacion": "20230323"
+        },
+        "df": {
+          "titulo": "Disposición final primera",
+          "fecha_actualizacion": "20230323"
+        },
+        "df-10": {
+          "titulo": "Disposición final décima",
+          "fecha_actualizacion": "20230323"
+        },
+        "df-11": {
+          "titulo": "Disposición final décima primera",
+          "fecha_actualizacion": "20230323"
+        },
+        "df-12": {
+          "titulo": "Disposición final décima segunda",
+          "fecha_actualizacion": "20230323"
+        },
+        "df-2": {
+          "titulo": "Disposición final segunda",
+          "fecha_actualizacion": "20230323"
+        },
+        "df-3": {
+          "titulo": "Disposición final tercera",
+          "fecha_actualizacion": "20230323"
+        },
+        "df-4": {
+          "titulo": "Disposición final cuarta",
+          "fecha_actualizacion": "20230323"
+        },
+        "df-5": {
+          "titulo": "Disposición final quinta",
+          "fecha_actualizacion": "20230323"
+        },
+        "df-6": {
+          "titulo": "Disposición final sexta",
+          "fecha_actualizacion": "20230323"
+        },
+        "df-7": {
+          "titulo": "Disposición final séptima",
+          "fecha_actualizacion": "20230323"
+        },
+        "df-8": {
+          "titulo": "Disposición final octava",
+          "fecha_actualizacion": "20230323"
+        },
+        "df-9": {
+          "titulo": "Disposición final novena",
+          "fecha_actualizacion": "20230323"
+        },
+        "dt": {
+          "titulo": "Disposición transitoria primera",
+          "fecha_actualizacion": "20240608"
+        },
+        "dt-10": {
+          "titulo": "Disposición transitoria décima",
+          "fecha_actualizacion": "20230323"
+        },
+        "dt-11": {
+          "titulo": "Disposición transitoria décima primera",
+          "fecha_actualizacion": "20230323"
+        },
+        "dt-12": {
+          "titulo": "Disposición transitoria décima segunda",
+          "fecha_actualizacion": "20230323"
+        },
+        "dt-13": {
+          "titulo": "Disposición transitoria novena bis",
+          "fecha_actualizacion": "20240608"
+        },
+        "dt-2": {
+          "titulo": "Disposición transitoria segunda",
+          "fecha_actualizacion": "20230323"
+        },
+        "dt-3": {
+          "titulo": "Disposición transitoria tercera",
+          "fecha_actualizacion": "20230323"
+        },
+        "dt-4": {
+          "titulo": "Disposición transitoria cuarta",
+          "fecha_actualizacion": "20230323"
+        },
+        "dt-5": {
+          "titulo": "Disposición transitoria quinta",
+          "fecha_actualizacion": "20230323"
+        },
+        "dt-6": {
+          "titulo": "Disposición transitoria sexta",
+          "fecha_actualizacion": "20230323"
+        },
+        "dt-7": {
+          "titulo": "Disposición transitoria séptima",
+          "fecha_actualizacion": "20230323"
+        },
+        "dt-8": {
+          "titulo": "Disposición transitoria octava",
+          "fecha_actualizacion": "20230323"
+        },
+        "dt-9": {
+          "titulo": "Disposición transitoria novena",
+          "fecha_actualizacion": "20230323"
+        },
+        "fi": {
+          "titulo": "[firma]",
+          "fecha_actualizacion": "20230323"
+        },
+        "no": {
+          "titulo": "",
+          "fecha_actualizacion": "20230323"
+        },
+        "pr": {
+          "titulo": "[preambulo]",
+          "fecha_actualizacion": "20230323"
+        },
+        "s1": {
+          "titulo": "Sección 1",
+          "fecha_actualizacion": "20230323"
+        },
+        "s2": {
+          "titulo": "Sección 2",
+          "fecha_actualizacion": "20230323"
+        },
+        "s3": {
+          "titulo": "Sección 3",
+          "fecha_actualizacion": "20230323"
+        },
+        "ti": {
+          "titulo": "TÍTULO I",
+          "fecha_actualizacion": "20230323"
+        },
+        "ti-2": {
+          "titulo": "TÍTULO II",
+          "fecha_actualizacion": "20230323"
+        },
+        "ti-3": {
+          "titulo": "TÍTULO III",
+          "fecha_actualizacion": "20230323"
+        },
+        "ti-4": {
+          "titulo": "TÍTULO IV",
+          "fecha_actualizacion": "20230323"
+        },
+        "ti-5": {
+          "titulo": "TÍTULO IX",
+          "fecha_actualizacion": "20230323"
+        },
+        "tp": {
+          "titulo": "TÍTULO PRELIMINAR",
+          "fecha_actualizacion": "20230323"
+        },
+        "tv": {
+          "titulo": "TÍTULO V",
+          "fecha_actualizacion": "20230323"
+        },
+        "tv-2": {
+          "titulo": "TÍTULO VI",
+          "fecha_actualizacion": "20230323"
+        },
+        "tv-3": {
+          "titulo": "TÍTULO VII",
+          "fecha_actualizacion": "20230323"
+        },
+        "tv-4": {
+          "titulo": "TÍTULO VIII",
+          "fecha_actualizacion": "20230323"
+        },
+        "tx": {
+          "titulo": "TÍTULO X",
+          "fecha_actualizacion": "20230323"
+        }
+      }
+    }
+  }
 }
