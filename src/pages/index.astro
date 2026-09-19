@@ -12,40 +12,99 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
     <meta name="viewport" content="width=device-width" />
     <meta
       name="description"
-      content="Observatorio Normativo Universitario: consulta y seguimiento de normativa universitaria relevante para la Universidad de Murcia."
+      content="Observatorio Normativo Universitario: consulta, clasificación y seguimiento de normativa universitaria relevante para la Universidad de Murcia."
+    />
+    <meta name="theme-color" content="#002028" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
     />
     <title>Observatorio Normativo Universitario</title>
   </head>
 
   <body>
-    <header class="topbar">
-      <div class="container topbar__inner">
-        <div>
-          <p class="eyebrow">OBSERVATORIO NORMATIVO</p>
-          <h1>Observatorio Normativo Universitario</h1>
-          <p class="subtitle">
-            Consulta, clasificación y seguimiento de normativa universitaria.
-          </p>
+    <header>
+      <div class="institutional-bar">
+        <div class="container institutional-bar__inner">
+          <a
+            class="umu-brand"
+            href="https://www.um.es/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Universidad de Murcia"
+          >
+            <img src="/assets/logo-umu.png" alt="Universidad de Murcia" />
+          </a>
+
+          <div class="institutional-context">
+            <span>Consejo de Estudiantes</span>
+            <strong>Vicepresidencia de Normativa y Calidad</strong>
+          </div>
         </div>
-        <span class="status-chip">Catálogo en construcción</span>
+      </div>
+
+      <div class="hero-header">
+        <div class="container hero-header__inner">
+          <div class="hero-copy">
+            <p class="eyebrow eyebrow--light">OBSERVATORIO NORMATIVO</p>
+            <h1>Normativa universitaria, clara y accesible.</h1>
+            <p class="subtitle">
+              Consulta, clasificación y seguimiento de disposiciones estatales,
+              autonómicas y de la Universidad de Murcia.
+            </p>
+
+            <div class="hero-meta">
+              <span class="status-chip">
+                <span class="status-dot" aria-hidden="true"></span>
+                Catálogo en construcción
+              </span>
+              <span>Fuentes oficiales y trazabilidad de cambios</span>
+            </div>
+          </div>
+
+          <aside class="ceum-card" aria-label="Consejo de Estudiantes de la Universidad de Murcia">
+            <p>Proyecto promovido por</p>
+            <img src="/assets/logo-ceum.png" alt="Consejo de Estudiantes de la Universidad de Murcia" />
+          </aside>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="hero container">
-        <div class="notice">
-          <strong>Información jurídica:</strong>
-          <span> el Observatorio enlaza siempre a la fuente oficial. Los textos consolidados del BOE tienen carácter informativo.</span>
+      <section class="container search-zone">
+        <div class="legal-notice">
+          <div class="legal-notice__icon" aria-hidden="true">i</div>
+          <div>
+            <strong>Información jurídica</strong>
+            <p>
+              El Observatorio enlaza siempre a la fuente oficial. Los textos consolidados
+              del BOE tienen carácter informativo; para efectos jurídicos debe consultarse
+              la publicación oficial correspondiente.
+            </p>
+          </div>
         </div>
 
         <div class="search-panel">
-          <label for="search">Buscar normativa</label>
-          <input
-            id="search"
-            type="search"
-            placeholder="Ej.: evaluación, estudiantes, gobernanza, profesorado..."
-            autocomplete="off"
-          />
+          <div class="search-panel__heading">
+            <div>
+              <p class="eyebrow">BUSCADOR</p>
+              <h2>Encuentra la norma que necesitas</h2>
+            </div>
+            <span class="search-help">Busca por título, materia o contenido descriptivo</span>
+          </div>
+
+          <label class="sr-only" for="search">Buscar normativa</label>
+          <div class="search-input-wrap">
+            <span aria-hidden="true">⌕</span>
+            <input
+              id="search"
+              type="search"
+              placeholder="Ej.: evaluación, estudiantes, gobernanza, profesorado..."
+              autocomplete="off"
+            />
+          </div>
 
           <div class="filters">
             <div>
@@ -76,13 +135,20 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
         </div>
       </section>
 
-      <section class="container section">
+      <section class="container section" id="catalogo">
         <div class="section-heading">
           <div>
             <p class="eyebrow">CATÁLOGO JURÍDICO</p>
             <h2>Normas</h2>
+            <p class="section-description">
+              Cada registro identifica su fuente, estado de verificación y principales
+              materias de interés universitario.
+            </p>
           </div>
-          <p id="counter">{normas.length} resultados</p>
+          <div class="result-counter">
+            <strong id="counter">{normas.length}</strong>
+            <span>{normas.length === 1 ? 'resultado' : 'resultados'}</span>
+          </div>
         </div>
 
         <div id="results" class="cards">
@@ -95,13 +161,22 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
               data-materias={norma.materias.join('|')}
               data-estado={norma.estado}
             >
+              <div class="card__accent" aria-hidden="true"></div>
+
               <div class="card__top">
                 <span class="badge">{norma.ambito}</span>
-                <span class="verification">{norma.verificacion}</span>
+                <span class="verification">
+                  <span class="verification-dot" aria-hidden="true"></span>
+                  {norma.verificacion}
+                </span>
               </div>
 
               <h3>{norma.titulo}</h3>
-              <p>{norma.descripcion}</p>
+              <p class="card__description">{norma.descripcion}</p>
+
+              <div class="matter-tags" aria-label="Materias">
+                {norma.materias.map((materia) => <span>{materia}</span>)}
+              </div>
 
               <dl>
                 <div>
@@ -124,16 +199,18 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
                   <dt>Última actualización BOE</dt>
                   <dd>{norma.ultima_actualizacion}</dd>
                 </div>
-                <div>
-                  <dt>Materias</dt>
-                  <dd>{norma.materias.join(', ')}</dd>
-                </div>
               </dl>
 
               <div class="card__footer">
                 <span>Verificada: {norma.fecha_verificacion}</span>
-                <a class="source-link" href={norma.url_oficial} target="_blank" rel="noreferrer">
-                  Fuente oficial · BOE ↗
+                <a
+                  class="source-link"
+                  href={norma.url_oficial}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Consultar fuente oficial
+                  <span aria-hidden="true">↗</span>
                 </a>
               </div>
             </article>
@@ -145,26 +222,61 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
         </p>
       </section>
 
-      <section class="container section">
-        <div class="section-heading">
+      <section class="method-section">
+        <div class="container method-grid">
           <div>
-            <p class="eyebrow">SIGUIENTE FASE</p>
-            <h2>Qué construiremos ahora</h2>
+            <p class="eyebrow eyebrow--red">METODOLOGÍA</p>
+            <h2>Una base pensada para poder verificar cada cambio.</h2>
           </div>
-        </div>
 
-        <div class="roadmap">
-          <div><strong>1.</strong> Ficha individual completa de cada norma.</div>
-          <div><strong>2.</strong> Historial de versiones y normas modificadoras.</div>
-          <div><strong>3.</strong> Vigilancia automática de la API oficial del BOE.</div>
-          <div><strong>4.</strong> Catálogo autonómico y normativa interna de la UMU.</div>
+          <div class="method-points">
+            <article>
+              <span>01</span>
+              <div>
+                <strong>Fuente oficial</strong>
+                <p>BOE, BORM y fuentes institucionales de la Universidad de Murcia.</p>
+              </div>
+            </article>
+
+            <article>
+              <span>02</span>
+              <div>
+                <strong>Control de vigencia</strong>
+                <p>Estado y fecha de la última comprobación visibles en cada registro.</p>
+              </div>
+            </article>
+
+            <article>
+              <span>03</span>
+              <div>
+                <strong>Historial de cambios</strong>
+                <p>La siguiente fase incorporará versiones y comparación antes/ahora.</p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="container">
-        Observatorio Normativo Universitario · Proyecto en desarrollo
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-title">Observatorio Normativo Universitario</p>
+          <p>
+            Proyecto en desarrollo para facilitar el acceso y seguimiento de la normativa
+            universitaria.
+          </p>
+        </div>
+
+        <div class="footer-brand">
+          <span>Consejo de Estudiantes</span>
+          <img src="/assets/logo-ceum.png" alt="CEUM" />
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>Universidad de Murcia</span>
+        <span>Fuentes oficiales · Verificación · Trazabilidad</span>
       </div>
     </footer>
 
@@ -175,6 +287,7 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
       const estado = document.querySelector('#estado');
       const cards = [...document.querySelectorAll('.card')];
       const counter = document.querySelector('#counter');
+      const counterLabel = counter?.nextElementSibling;
       const empty = document.querySelector('#empty');
 
       function normalize(text) {
@@ -213,7 +326,10 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
           if (show) visible += 1;
         });
 
-        counter.textContent = `${visible} ${visible === 1 ? 'resultado' : 'resultados'}`;
+        counter.textContent = String(visible);
+        if (counterLabel) {
+          counterLabel.textContent = visible === 1 ? 'resultado' : 'resultados';
+        }
         empty.hidden = visible !== 0;
       }
 
