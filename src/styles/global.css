@@ -1674,3 +1674,200 @@ footer {
     flex-direction: column;
   }
 }
+
+
+/* =========================================================
+   FASE 10 · CORPUS INTERNO UMU Y COBERTURA DE CENTROS
+   ========================================================= */
+
+.coverage-section {
+  padding: 76px 0 84px;
+  background: var(--umu-ivory);
+  border-top: 1px solid rgba(0, 32, 40, 0.1);
+  border-bottom: 1px solid rgba(0, 32, 40, 0.1);
+}
+
+.coverage-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(110px, 1fr));
+  gap: 1px;
+  background: rgba(0, 32, 40, 0.15);
+}
+
+.coverage-stats > div {
+  min-width: 130px;
+  padding: 14px 16px;
+  background: var(--umu-ivory);
+}
+
+.coverage-stats strong,
+.coverage-stats span {
+  display: block;
+}
+
+.coverage-stats strong {
+  color: var(--umu-red);
+  font-size: 1.55rem;
+}
+
+.coverage-stats span {
+  max-width: 125px;
+  margin-top: 3px;
+  color: #687477;
+  font-size: 0.7rem;
+  line-height: 1.3;
+}
+
+.coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.coverage-card {
+  background: white;
+  border: 1px solid rgba(0, 32, 40, 0.13);
+}
+
+.coverage-card summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 76px;
+  padding: 15px 18px;
+}
+
+.coverage-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.coverage-card summary small,
+.coverage-card summary strong {
+  display: block;
+}
+
+.coverage-card summary small {
+  margin-bottom: 3px;
+  color: #7a8587;
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.coverage-card summary strong {
+  font-size: 0.9rem;
+}
+
+.coverage-summary {
+  flex: 0 0 auto;
+  min-width: 45px;
+  padding: 5px 7px;
+  background: var(--umu-blue);
+  color: white;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.coverage-items {
+  border-top: 1px solid #e0e3df;
+}
+
+.coverage-items > div {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) minmax(155px, 1.3fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid #eceeeb;
+  font-size: 0.72rem;
+}
+
+.coverage-items > div > span {
+  text-transform: capitalize;
+  color: #5f6c6f;
+}
+
+.coverage-status {
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+.coverage-status--ok {
+  color: #25744b;
+}
+
+.coverage-status--pending {
+  color: #8a6820;
+}
+
+.coverage-items a {
+  color: var(--umu-red);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.development-targets {
+  margin-top: 44px;
+}
+
+.development-targets > div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.development-targets article {
+  position: relative;
+  padding: 19px;
+  background: white;
+  border: 1px solid rgba(0, 32, 40, 0.12);
+}
+
+.development-targets article > span {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: var(--umu-red);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.development-targets article > strong {
+  display: block;
+  max-width: calc(100% - 70px);
+  margin-bottom: 7px;
+  font-size: 0.88rem;
+}
+
+.development-targets p {
+  margin-bottom: 7px;
+  color: #687477;
+  font-size: 0.75rem;
+}
+
+.development-targets small {
+  color: #839093;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .coverage-grid,
+  .development-targets > div {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .coverage-items > div {
+    grid-template-columns: 1fr;
+  }
+}

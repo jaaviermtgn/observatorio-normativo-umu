@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "direct_sources": [
+    {
+      "id": "UMU-SG-18-2026",
+      "titulo": "Instrucción del Secretario General SG 18/2026 sobre la interpretación y aplicación del artículo 135.1.v) de los Estatutos de la UMU",
+      "url": "https://sede.um.es/sede/documento/normativa/instruccion-del-secretario-general-sg-18-2026-sobre-la-interpretacion-y-aplicacion-del-art-135-1-v-estatutos-umu/24199.pdf",
+      "categoria": "Académica",
+      "centro": null
+    },
+    {
+      "id": "UMU-REVA-2019",
+      "titulo": "Reglamento de Evaluación de Estudiantes de la Universidad de Murcia",
+      "url": "https://www.borm.es/services/anuncio/ano/2019/numero/7015/pdf?id=781132",
+      "categoria": "Académica",
+      "centro": null
+    },
+    {
+      "id": "UMU-TRASLADO-2026",
+      "titulo": "Reglamento de la Universidad de Murcia sobre admisión de estudiantes por traslado de expediente a estudios de Grado",
+      "url": "https://www.borm.es/services/anuncio/841204/pdf",
+      "categoria": "Académica",
+      "centro": null
+    },
+    {
+      "id": "UMU-PRACTICAS-2025",
+      "titulo": "Reglamento de prácticas académicas externas de estudiantes de la Universidad de Murcia",
+      "url": "https://www.borm.es/services/boletin/ano/2025/numero/73/pdf",
+      "categoria": "Académica",
+      "centro": null
+    },
+    {
+      "id": "UMU-DOCTORADO-2025",
+      "titulo": "Reglamento por el que se regulan las enseñanzas oficiales de doctorado de la Universidad de Murcia",
+      "url": "https://www.borm.es/services/anuncio/ano/2025/numero/2635/pdf?id=836683",
+      "categoria": "Académica",
+      "centro": null
+    },
+    {
+      "id": "UMU-TFGTFM-2015",
+      "titulo": "Reglamento por el que se regulan los Trabajos Fin de Grado y de Fin de Máster en la Universidad de Murcia",
+      "url": "https://sede.um.es/sede/normativa/reglamento-por-el-que-se-regulan-los-trabajos-fin-de-grado-y-de-fin-de-master-2015/pdf/10339.pdf",
+      "categoria": "Académica",
+      "centro": null
+    },
+    {
+      "id": "UMU-RECONOCIMIENTO-2025",
+      "titulo": "Reglamento sobre adaptación, reconocimiento y transferencia de créditos en enseñanzas de Grado y Máster",
+      "url": "https://www.borm.es/services/boletin/ano/2025/numero/259/pdf",
+      "categoria": "Académica",
+      "centro": null
+    },
+    {
+      "id": "UMU-MOVILIDAD-2025",
+      "titulo": "Reglamento sobre movilidad de estudiantes y alumnado visitante de la Universidad de Murcia",
+      "url": "https://www.borm.es/services/anuncio/840228/pdf",
+      "categoria": "Académica",
+      "centro": null
+    },
+    {
+      "id": "UMU-DERECHO-TFG-COLECTIVO-2023",
+      "titulo": "Normativa por la que se regulan los TFG en la modalidad de proyecto colectivo de la Facultad de Derecho",
+      "url": "https://www.um.es/documents/652345/0/NORMATIVA+POR+LA+QUE+SE+REGULAN+LOS+TRABAJOS+DE+FIN+DE+GRADO+Julio+2023-2+%282%29.pdf/77a4fb32-8865-6e65-07a4-143651d4b51f?t=1695980305236",
+      "categoria": "Centro",
+      "centro": "Facultad de Derecho"
+    },
+    {
+      "id": "UMU-FQ-ETICA-EVAL",
+      "titulo": "Normativa de la Facultad de Química relativa a acciones contrarias a la ética universitaria en los procesos de evaluación",
+      "url": "https://www.um.es/documents/14152/23085107/Normativa+ética+Evaluaciones+FQ+UMU_V02.pdf",
+      "categoria": "Centro",
+      "centro": "Facultad de Química"
+    },
+    {
+      "id": "UMU-FQ-TFG-2021",
+      "titulo": "Reglamento por el que se regula el Trabajo Fin de Grado de los títulos de Grado de la Facultad de Química",
+      "url": "https://www.um.es/documents/14152/16808989/Reglamento-TFG-2019-20pdf/0f35832e-b52e-4a48-8293-a7adb0864b51",
+      "categoria": "Centro",
+      "centro": "Facultad de Química"
+    },
+    {
+      "id": "UMU-CONVIVENCIA-2023",
+      "titulo": "Reglamento de Convivencia de la Universidad de Murcia",
+      "url": "https://www.borm.es/services/boletin/ano/2023/numero/61/pdf",
+      "categoria": "Comunidad universitaria",
+      "centro": null
+    },
+    {
+      "id": "UMU-DAFI-RRI",
+      "titulo": "Reglamento de Régimen Interno de la Delegación de Alumnos de la Facultad de Informática (DAFI)",
+      "url": "https://dafi.inf.um.es/documentos/",
+      "categoria": "Delegación de Estudiantes",
+      "centro": "Facultad de Informática"
+    },
+    {
+      "id": "UMU-CRAU-2025",
+      "titulo": "Reglamento de reconocimiento de créditos por actividades universitarias (CRAU) de la Universidad de Murcia",
+      "url": "https://www.borm.es/services/anuncio/ano/2025/numero/39/pdf?id=833143",
+      "categoria": "Estudiantado",
+      "centro": null
+    },
+    {
+      "id": "UMU-EXTENSION-2025",
+      "titulo": "Reglamento regulador de las actividades de extensión universitaria de la Universidad de Murcia",
+      "url": "https://www.borm.es/services/boletin/110158/pdf",
+      "categoria": "Formación y extensión",
+      "centro": null
+    },
+    {
+      "id": "UMU-PDI-SUSTITUTO-2026",
+      "titulo": "Reglamento para la constitución de bolsas de empleo y contratación de profesorado sustituto de la Universidad de Murcia",
+      "url": "https://www.borm.es/services/boletin/ano/2026/numero/2/pdf",
+      "categoria": "Personal",
+      "centro": null
+    },
+    {
+      "id": "UMU-PDI-CONCURSOS-2024",
+      "titulo": "Reglamento regulador de los concursos de acceso a plazas de los cuerpos docentes universitarios y de profesorado permanente laboral de la Universidad de Murcia",
+      "url": "https://sede.um.es/sede/documento/normativa/reglamento-regulador-de-los-concursos-de-acceso-a-plazas-de-los-cuerpos-docentes-universitarios-y-de-profesorado/22241.pdf",
+      "categoria": "Personal",
+      "centro": null
+    }
+  ],
+  "discovery_pages": [
+    {
+      "id": "dafi-documentos",
+      "titulo": "Documentos DAFI",
+      "url": "https://dafi.inf.um.es/documentos/",
+      "centro": "Facultad de Informática"
+    },
+    {
+      "id": "quimica-normativa",
+      "titulo": "Normativa Facultad de Química",
+      "url": "https://www.um.es/web/quimica/contenido/normativa",
+      "centro": "Facultad de Química"
+    },
+    {
+      "id": "derecho-normativa",
+      "titulo": "Normativa Facultad de Derecho",
+      "url": "https://www.um.es/web/derecho/contenido/normativa",
+      "centro": "Facultad de Derecho"
+    },
+    {
+      "id": "facultad-letras-normativa",
+      "titulo": "Normativa · Facultad de Letras",
+      "url": "https://www.um.es/web/letras/contenido/normativa",
+      "centro": "Facultad de Letras"
+    },
+    {
+      "id": "facultad-biologia-normativa",
+      "titulo": "Normativa · Facultad de Biología",
+      "url": "https://www.um.es/web/biologia/contenido/normativa",
+      "centro": "Facultad de Biología"
+    },
+    {
+      "id": "facultad-comunicacion-documentacion-normativa",
+      "titulo": "Normativa · Facultad de Comunicación y Documentación",
+      "url": "https://www.um.es/web/comunicacion/contenido/normativa",
+      "centro": "Facultad de Comunicación y Documentación"
+    },
+    {
+      "id": "facultad-economia-empresa-normativa",
+      "titulo": "Normativa · Facultad de Economía y Empresa",
+      "url": "https://www.um.es/web/economia/contenido/normativa",
+      "centro": "Facultad de Economía y Empresa"
+    },
+    {
+      "id": "facultad-educacion-normativa",
+      "titulo": "Normativa · Facultad de Educación",
+      "url": "https://www.um.es/web/educacion/contenido/normativa",
+      "centro": "Facultad de Educación"
+    },
+    {
+      "id": "facultad-bellas-artes-normativa",
+      "titulo": "Normativa · Facultad de Bellas Artes",
+      "url": "https://www.um.es/web/bellasartes/contenido/normativa",
+      "centro": "Facultad de Bellas Artes"
+    },
+    {
+      "id": "facultad-ciencias-sociosanitarias-lorca-normativa",
+      "titulo": "Normativa · Facultad de Ciencias Sociosanitarias de Lorca",
+      "url": "https://www.um.es/web/csslorca/contenido/normativa",
+      "centro": "Facultad de Ciencias Sociosanitarias de Lorca"
+    },
+    {
+      "id": "facultad-informatica-normativa",
+      "titulo": "Normativa · Facultad de Informática",
+      "url": "https://www.um.es/web/informatica/contenido/normativa",
+      "centro": "Facultad de Informática"
+    },
+    {
+      "id": "facultad-ciencias-trabajo-normativa",
+      "titulo": "Normativa · Facultad de Ciencias del Trabajo",
+      "url": "https://www.um.es/web/cctrabajo/contenido/normativa",
+      "centro": "Facultad de Ciencias del Trabajo"
+    },
+    {
+      "id": "facultad-matematicas-normativa",
+      "titulo": "Normativa · Facultad de Matemáticas",
+      "url": "https://www.um.es/web/matematicas/contenido/normativa",
+      "centro": "Facultad de Matemáticas"
+    },
+    {
+      "id": "facultad-medicina-normativa",
+      "titulo": "Normativa · Facultad de Medicina",
+      "url": "https://www.um.es/web/medicina/contenido/normativa",
+      "centro": "Facultad de Medicina"
+    },
+    {
+      "id": "facultad-enfermeria-normativa",
+      "titulo": "Normativa · Facultad de Enfermería",
+      "url": "https://www.um.es/web/enfermeria/contenido/normativa",
+      "centro": "Facultad de Enfermería"
+    },
+    {
+      "id": "facultad-optica-optometria-normativa",
+      "titulo": "Normativa · Facultad de Óptica y Optometría",
+      "url": "https://www.um.es/web/optica/contenido/normativa",
+      "centro": "Facultad de Óptica y Optometría"
+    },
+    {
+      "id": "facultad-farmacia-normativa",
+      "titulo": "Normativa · Facultad de Farmacia",
+      "url": "https://www.um.es/web/farmacia/contenido/normativa",
+      "centro": "Facultad de Farmacia"
+    },
+    {
+      "id": "facultad-filosofia-normativa",
+      "titulo": "Normativa · Facultad de Filosofía",
+      "url": "https://www.um.es/web/filosofia/contenido/normativa",
+      "centro": "Facultad de Filosofía"
+    },
+    {
+      "id": "facultad-psicologia-logopedia-normativa",
+      "titulo": "Normativa · Facultad de Psicología y Logopedia",
+      "url": "https://www.um.es/web/psicologia/contenido/normativa",
+      "centro": "Facultad de Psicología y Logopedia"
+    },
+    {
+      "id": "facultad-trabajo-social-normativa",
+      "titulo": "Normativa · Facultad de Trabajo Social",
+      "url": "https://www.um.es/web/trabajosocial/contenido/normativa",
+      "centro": "Facultad de Trabajo Social"
+    },
+    {
+      "id": "facultad-ciencias-deporte-normativa",
+      "titulo": "Normativa · Facultad de Ciencias del Deporte",
+      "url": "https://www.um.es/web/ccdeporte/contenido/normativa",
+      "centro": "Facultad de Ciencias del Deporte"
+    },
+    {
+      "id": "facultad-veterinaria-normativa",
+      "titulo": "Normativa · Facultad de Veterinaria",
+      "url": "https://www.um.es/web/veterinaria/contenido/normativa",
+      "centro": "Facultad de Veterinaria"
+    }
+  ],
+  "allowed_hosts_suffix": [
+    ".um.es",
+    "um.es",
+    "sede.um.es"
+  ],
+  "keywords": [
+    "reglamento",
+    "normativa",
+    "régimen interno",
+    "regimen interno",
+    "rri",
+    "delegación",
+    "delegacion",
+    "estudiante",
+    "tfg",
+    "tfm",
+    "prácticas",
+    "practicas",
+    "movilidad",
+    "electoral",
+    "elecciones",
+    "evaluación",
+    "evaluacion",
+    "reconocimiento",
+    "permanencia",
+    "matrícula",
+    "matricula",
+    "convivencia",
+    "estatutos",
+    "instrucción",
+    "instruccion",
+    "resolución rectoral",
+    "resolucion rectoral",
+    "igualdad",
+    "discapacidad"
+  ]
+}

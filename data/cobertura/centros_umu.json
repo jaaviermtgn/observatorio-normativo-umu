@@ -1,0 +1,923 @@
+{
+  "fecha_revision": "19/09/2026",
+  "criterio": "Inventario de cobertura. Un estado pendiente no significa inexistencia de la norma: significa que todavía no se ha localizado y verificado una fuente oficial apta para el catálogo.",
+  "centros": [
+    {
+      "id": "facultad-letras",
+      "nombre": "Facultad de Letras",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-biologia",
+      "nombre": "Facultad de Biología",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-quimica",
+      "nombre": "Facultad de Química",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Verificado",
+          "url": "https://www.um.es/documents/14152/16808989/Reglamento-TFG-2019-20pdf/0f35832e-b52e-4a48-8293-a7adb0864b51",
+          "nota": "Reglamento TFG de centro."
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-comunicacion-documentacion",
+      "nombre": "Facultad de Comunicación y Documentación",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-economia-empresa",
+      "nombre": "Facultad de Economía y Empresa",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-educacion",
+      "nombre": "Facultad de Educación",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-bellas-artes",
+      "nombre": "Facultad de Bellas Artes",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-ciencias-sociosanitarias-lorca",
+      "nombre": "Facultad de Ciencias Sociosanitarias de Lorca",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-informatica",
+      "nombre": "Facultad de Informática",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Verificado",
+          "url": "https://dafi.inf.um.es/documentos/",
+          "nota": "La página lista RRI-DAFI.pdf."
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-ciencias-trabajo",
+      "nombre": "Facultad de Ciencias del Trabajo",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-derecho",
+      "nombre": "Facultad de Derecho",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Parcialmente verificado",
+          "url": "https://www.um.es/documents/652345/0/NORMATIVA+POR+LA+QUE+SE+REGULAN+LOS+TRABAJOS+DE+FIN+DE+GRADO+Julio+2023-2+%282%29.pdf/77a4fb32-8865-6e65-07a4-143651d4b51f?t=1695980305236",
+          "nota": "Localizada normativa de TFG colectivo; falta cerrar toda la normativa TFG/TFM del centro."
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-matematicas",
+      "nombre": "Facultad de Matemáticas",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-medicina",
+      "nombre": "Facultad de Medicina",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-enfermeria",
+      "nombre": "Facultad de Enfermería",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-optica-optometria",
+      "nombre": "Facultad de Óptica y Optometría",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-farmacia",
+      "nombre": "Facultad de Farmacia",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-filosofia",
+      "nombre": "Facultad de Filosofía",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-psicologia-logopedia",
+      "nombre": "Facultad de Psicología y Logopedia",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-trabajo-social",
+      "nombre": "Facultad de Trabajo Social",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-ciencias-deporte",
+      "nombre": "Facultad de Ciencias del Deporte",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-veterinaria",
+      "nombre": "Facultad de Veterinaria",
+      "tipo": "Facultad",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "eidum",
+      "nombre": "Escuela Internacional de Doctorado de la Universidad de Murcia",
+      "tipo": "Escuela",
+      "obligacion_rri_delegacion_estatutos_2026": true,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "centro-enfermeria-cartagena",
+      "nombre": "Centro/Facultad de Enfermería - campus/entorno Cartagena",
+      "tipo": "Estructura relacionada",
+      "obligacion_rri_delegacion_estatutos_2026": false,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "facultad-turismo-adscrita",
+      "nombre": "Facultad de Turismo (centro adscrito)",
+      "tipo": "Centro adscrito",
+      "obligacion_rri_delegacion_estatutos_2026": false,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "isen",
+      "nombre": "ISEN Centro Universitario (centro adscrito)",
+      "tipo": "Centro adscrito",
+      "obligacion_rri_delegacion_estatutos_2026": false,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "escuela-enfermeria-adscrita",
+      "nombre": "Escuela de Enfermería (centro adscrito)",
+      "tipo": "Centro adscrito",
+      "obligacion_rri_delegacion_estatutos_2026": false,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    },
+    {
+      "id": "enae",
+      "nombre": "ENAE Business School / centro vinculado",
+      "tipo": "Centro vinculado",
+      "obligacion_rri_delegacion_estatutos_2026": false,
+      "objetivos": {
+        "rri_centro": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "rri_delegacion": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_tfg_tfm": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_practicas_practicum": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "otra_normativa_academica": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        },
+        "normativa_representacion_elecciones": {
+          "estado": "Pendiente de localizar/verificar",
+          "url": null
+        }
+      }
+    }
+  ],
+  "desarrollo_estatutario_y_otros_objetivos": [
+    {
+      "titulo": "Reglamento de Funcionamiento del Claustro Universitario",
+      "estado": "Pendiente de localizar/aprobar según desarrollo estatutario",
+      "prioridad": "Alta",
+      "motivo": "Los Estatutos de 2026 prevén normativa de desarrollo institucional."
+    },
+    {
+      "titulo": "Reglamento del Consejo de Gobierno",
+      "estado": "Pendiente de localizar/aprobar según desarrollo estatutario",
+      "prioridad": "Alta",
+      "motivo": "Desarrollo de la organización y funcionamiento del Consejo de Gobierno."
+    },
+    {
+      "titulo": "Reglamento Electoral General",
+      "estado": "Pendiente de localizar/aprobar según desarrollo estatutario",
+      "prioridad": "Muy alta",
+      "motivo": "Afecta directamente a procesos electorales y representación estudiantil."
+    },
+    {
+      "titulo": "Estatuto / Reglamento General del Estudiantado",
+      "estado": "Pendiente de localizar/verificar desarrollo vigente",
+      "prioridad": "Muy alta",
+      "motivo": "Derechos, deberes y representación del estudiantado."
+    },
+    {
+      "titulo": "Reglamento General de Centros",
+      "estado": "Pendiente de localizar/verificar desarrollo vigente",
+      "prioridad": "Alta",
+      "motivo": "Marco común del funcionamiento de facultades y escuelas."
+    },
+    {
+      "titulo": "Reglamento General de Departamentos",
+      "estado": "Pendiente de localizar/verificar desarrollo vigente",
+      "prioridad": "Media",
+      "motivo": "Funcionamiento de departamentos y representación en sus consejos."
+    },
+    {
+      "titulo": "Normativa de asociaciones de estudiantes",
+      "estado": "Pendiente de localizar/verificar desarrollo vigente",
+      "prioridad": "Alta",
+      "motivo": "Los Estatutos prevén el reconocimiento de asociaciones conforme a normativa del Consejo de Gobierno."
+    },
+    {
+      "titulo": "Resolución Rectoral R-358/2016 sobre estudiantes con discapacidad o necesidades específicas de apoyo educativo",
+      "estado": "Vigencia de referencia confirmada en guías docentes actuales; fuente normativa original pendiente de localizar",
+      "prioridad": "Alta",
+      "motivo": "Las guías docentes 2026/2027 siguen remitiendo a ella para medidas de equiparación e inclusión."
+    }
+  ]
+}

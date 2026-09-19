@@ -2,6 +2,8 @@
 import '../styles/global.css';
 import normas from '../../data/normas/catalogo.json';
 import novedadesBorm from '../../data/novedades/borm.json';
+import novedadesUmu from '../../data/novedades/umu.json';
+import coberturaUmu from '../../data/cobertura/centros_umu.json';
 
 const materias = [...new Set(normas.flatMap((norma) => norma.materias))].sort();
 const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
@@ -11,6 +13,23 @@ const estados = [...new Set(normas.map((norma) => norma.estado))].sort();
 const novedadesPendientes = novedadesBorm
   .filter((item) => item.estado_revision === 'Pendiente de revisión')
   .slice(0, 12);
+const novedadesUmuPendientes = novedadesUmu
+  .filter((item) => item.estado_revision === 'Pendiente de revisión')
+  .slice(0, 12);
+
+const centrosCobertura = coberturaUmu.centros;
+const totalCentrosCobertura = centrosCobertura.length;
+const rriDelegacionVerificados = centrosCobertura.filter(
+  (centro) => centro.objetivos.rri_delegacion.estado === 'Verificado'
+).length;
+const objetivosPendientes = centrosCobertura.reduce(
+  (total, centro) =>
+    total +
+    Object.values(centro.objetivos).filter((objetivo) =>
+      objetivo.estado.startsWith('Pendiente')
+    ).length,
+  0
+);
 ---
 
 <html lang="es">
@@ -252,6 +271,114 @@ const novedadesPendientes = novedadesBorm
         <p id="empty" class="empty" hidden>
           No hay resultados con esos filtros.
         </p>
+      </section>
+
+      {novedadesUmuPendientes.length > 0 && (
+        <section class="container section umu-review" id="novedades-umu">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow eyebrow--red">VIGILANCIA UMU</p>
+              <h2>Cambios y documentos internos pendientes de revisión</h2>
+              <p class="section-description">
+                El monitor ha detectado cambios en documentos oficiales de la UMU o nuevos
+                enlaces con apariencia normativa. Ninguno altera el catálogo hasta que sea
+                revisado.
+              </p>
+            </div>
+            <div class="result-counter">
+              <strong>{novedadesUmuPendientes.length}</strong>
+              <span>pendientes</span>
+            </div>
+          </div>
+
+          <div class="borm-review-grid">
+            {novedadesUmuPendientes.map((item) => (
+              <article class="borm-review-card">
+                <div class="borm-review-card__meta">
+                  <span>{item.tipo_evento}</span>
+                  <span>{item.detectado_el}</span>
+                </div>
+                <span class="review-type">{item.categoria}</span>
+                <h3>{item.titulo}</h3>
+                <p>{item.descripcion}</p>
+                <div class="borm-review-card__footer">
+                  <span>{item.centro || 'Universidad de Murcia'}</span>
+                  <a href={item.url} target="_blank" rel="noreferrer">
+                    Revisar fuente ↗
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <section class="coverage-section" id="cobertura-umu">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow eyebrow--red">COBERTURA UMU</p>
+              <h2>No damos por inexistente lo que aún no hemos localizado.</h2>
+              <p class="section-description">
+                Este inventario obliga al proyecto a buscar normativa de todos los centros,
+                incluidas sus Delegaciones de Estudiantes. “Pendiente” significa pendiente
+                de localizar o verificar una fuente oficial, no que la norma no exista.
+              </p>
+            </div>
+            <div class="coverage-stats">
+              <div><strong>{totalCentrosCobertura}</strong><span>centros inventariados</span></div>
+              <div><strong>{rriDelegacionVerificados}</strong><span>RRI de delegación verificados</span></div>
+              <div><strong>{objetivosPendientes}</strong><span>objetivos documentales pendientes</span></div>
+            </div>
+          </div>
+
+          <div class="coverage-grid">
+            {centrosCobertura.map((centro) => (
+              <details class="coverage-card">
+                <summary>
+                  <span>
+                    <small>{centro.tipo}</small>
+                    <strong>{centro.nombre}</strong>
+                  </span>
+                  <span class="coverage-summary">
+                    {Object.values(centro.objetivos).filter((x) => x.estado === 'Verificado').length}
+                    / {Object.keys(centro.objetivos).length}
+                  </span>
+                </summary>
+
+                <div class="coverage-items">
+                  {Object.entries(centro.objetivos).map(([clave, objetivo]) => (
+                    <div>
+                      <span>{clave.replaceAll('_', ' ')}</span>
+                      <strong class:list={[
+                        'coverage-status',
+                        objetivo.estado === 'Verificado' && 'coverage-status--ok',
+                        objetivo.estado.startsWith('Pendiente') && 'coverage-status--pending'
+                      ]}>{objetivo.estado}</strong>
+                      {objetivo.url && (
+                        <a href={objetivo.url} target="_blank" rel="noreferrer">Fuente ↗</a>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </details>
+            ))}
+          </div>
+
+          <div class="development-targets">
+            <p class="eyebrow">DESARROLLO ESTATUTARIO Y OTROS OBJETIVOS</p>
+            <div>
+              {coberturaUmu.desarrollo_estatutario_y_otros_objetivos.map((objetivo) => (
+                <article>
+                  <span>{objetivo.prioridad}</span>
+                  <strong>{objetivo.titulo}</strong>
+                  <p>{objetivo.estado}</p>
+                  <small>{objetivo.motivo}</small>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
 
       {novedadesPendientes.length > 0 && (

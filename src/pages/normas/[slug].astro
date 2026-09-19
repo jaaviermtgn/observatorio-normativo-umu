@@ -148,9 +148,21 @@ const tieneHistorialCurado = historialCurado.length > 0;
                 </div>
               )}
               <div>
-                <span>Departamento</span>
+                <span>Departamento / órgano</span>
                 <strong>{norma.departamento}</strong>
               </div>
+              {norma.nivel_interno && (
+                <div>
+                  <span>Nivel interno</span>
+                  <strong>{norma.nivel_interno}</strong>
+                </div>
+              )}
+              {norma.centro && (
+                <div>
+                  <span>Centro</span>
+                  <strong>{norma.centro}</strong>
+                </div>
+              )}
             </div>
           </section>
 
@@ -365,8 +377,8 @@ const tieneHistorialCurado = historialCurado.length > 0;
                 <>
                   <a href={norma.url_oficial} target="_blank" rel="noreferrer">
                     <span>
-                      <small>BORM</small>
-                      <strong>Publicación oficial</strong>
+                      <small>{norma.fuente}</small>
+                      <strong>{norma.fuente === 'BORM' ? 'Publicación oficial' : 'Documento o página oficial'}</strong>
                     </span>
                     <span aria-hidden="true">↗</span>
                   </a>
@@ -374,8 +386,8 @@ const tieneHistorialCurado = historialCurado.length > 0;
                   {norma.url_contexto && (
                     <a href={norma.url_contexto} target="_blank" rel="noreferrer">
                       <span>
-                        <small>CARM</small>
-                        <strong>Contexto normativo oficial</strong>
+                        <small>FUENTE COMPLEMENTARIA</small>
+                        <strong>Contexto oficial</strong>
                       </span>
                       <span aria-hidden="true">↗</span>
                     </a>
@@ -393,14 +405,20 @@ const tieneHistorialCurado = historialCurado.length > 0;
                 <p>
                   {norma.fuente === 'BOE'
                     ? 'Esta ficha está incluida en la vigilancia automática. El robot compara diariamente el índice de bloques de la legislación consolidada del BOE y conserva las versiones anterior y nueva cuando detecta cambios.'
-                    : 'Esta ficha forma parte del ámbito de vigilancia del BORM. El sistema revisa cada nuevo boletín, identifica disposiciones potencialmente universitarias y las envía a revisión humana antes de alterar el catálogo jurídico.'}
+                    : norma.fuente === 'BORM'
+                      ? 'Esta ficha forma parte del ámbito de vigilancia del BORM. El sistema revisa cada nuevo boletín, identifica disposiciones potencialmente universitarias y las envía a revisión humana antes de alterar el catálogo jurídico.'
+                      : 'El monitor UMU revisa la huella del documento o página oficial y explora páginas de normativa para detectar nuevas publicaciones. Los cambios técnicos se envían a revisión humana antes de alterar esta ficha.'}
                 </p>
               </div>
 
               <div class="monitor-status monitor-status--active">
                 <span>ACTIVA</span>
                 <strong>
-                  {norma.fuente === 'BOE' ? 'Comprobación diaria del BOE' : 'Revisión diaria del BORM'}
+                  {norma.fuente === 'BOE'
+                    ? 'Comprobación diaria del BOE'
+                    : norma.fuente === 'BORM'
+                      ? 'Revisión diaria del BORM'
+                      : 'Revisión diaria de fuentes UMU'}
                 </strong>
               </div>
             </div>
