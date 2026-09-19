@@ -1,0 +1,49 @@
+name: Vigilancia BOE
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 7 * * *"
+      timezone: "Europe/Madrid"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vigilancia-boe
+  cancel-in-progress: false
+
+jobs:
+  comprobar-boe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Probar el monitor
+        run: python -m unittest discover -s tests -v
+
+      - name: Consultar legislación consolidada del BOE
+        run: python scripts/boe_monitor.py
+
+      - name: Guardar cambios detectados
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No hay cambios que guardar."
+            exit 0
+          fi
+
+          git config user.name "observatorio-normativo-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add data/normas/catalogo.json data/monitor/
+          git commit -m "chore: actualización automática BOE"
+          git push
