@@ -1,0 +1,211 @@
+---
+import '../styles/global.css';
+import normas from '../../data/normas/ejemplos.json';
+
+const materias = [...new Set(normas.flatMap((norma) => norma.materias))].sort();
+const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Prototipo del Observatorio Normativo Universitario de la Universidad de Murcia"
+    />
+    <title>Observatorio Normativo Universitario</title>
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <div>
+          <p class="eyebrow">PROTOTIPO · FASE 2</p>
+          <h1>Observatorio Normativo Universitario</h1>
+          <p class="subtitle">
+            Consulta, clasificación y seguimiento de normativa universitaria.
+          </p>
+        </div>
+        <span class="status-chip">Maqueta funcional</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="notice">
+          <strong>Importante:</strong>
+          esta versión contiene registros de prueba y todavía no constituye una base jurídica verificada.
+        </div>
+
+        <div class="search-panel">
+          <label for="search">Buscar normativa</label>
+          <input
+            id="search"
+            type="search"
+            placeholder="Ej.: evaluación, estudiantes, universidad..."
+            autocomplete="off"
+          />
+
+          <div class="filters">
+            <div>
+              <label for="ambito">Ámbito</label>
+              <select id="ambito">
+                <option value="">Todos</option>
+                {ambitos.map((ambito) => <option value={ambito}>{ambito}</option>)}
+              </select>
+            </div>
+
+            <div>
+              <label for="materia">Materia</label>
+              <select id="materia">
+                <option value="">Todas</option>
+                {materias.map((materia) => <option value={materia}>{materia}</option>)}
+              </select>
+            </div>
+
+            <div>
+              <label for="estado">Estado</label>
+              <select id="estado">
+                <option value="">Todos</option>
+                <option value="Vigente">Vigente</option>
+                <option value="Pendiente de verificación">Pendiente de verificación</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">CATÁLOGO</p>
+            <h2>Normas</h2>
+          </div>
+          <p id="counter">{normas.length} resultados</p>
+        </div>
+
+        <div id="results" class="cards">
+          {normas.map((norma) => (
+            <article
+              class="card"
+              data-title={norma.titulo.toLowerCase()}
+              data-description={norma.descripcion.toLowerCase()}
+              data-ambito={norma.ambito}
+              data-materias={norma.materias.join('|')}
+              data-estado={norma.estado}
+            >
+              <div class="card__top">
+                <span class="badge">{norma.ambito}</span>
+                <span class="verification">{norma.verificacion}</span>
+              </div>
+
+              <h3>{norma.titulo}</h3>
+              <p>{norma.descripcion}</p>
+
+              <dl>
+                <div>
+                  <dt>Tipo</dt>
+                  <dd>{norma.tipo}</dd>
+                </div>
+                <div>
+                  <dt>Estado</dt>
+                  <dd>{norma.estado}</dd>
+                </div>
+                <div>
+                  <dt>Materias</dt>
+                  <dd>{norma.materias.join(', ')}</dd>
+                </div>
+              </dl>
+
+              <div class="card__footer">
+                <span>Registro de prueba</span>
+                <button type="button" disabled>Ficha completa · próxima fase</button>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <p id="empty" class="empty" hidden>
+          No hay resultados con esos filtros.
+        </p>
+      </section>
+
+      <section class="container section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">PRÓXIMA CAPA</p>
+            <h2>Qué añadiremos después</h2>
+          </div>
+        </div>
+
+        <div class="roadmap">
+          <div><strong>1.</strong> Fichas individuales y fuentes oficiales.</div>
+          <div><strong>2.</strong> Catálogo jurídico real y verificado.</div>
+          <div><strong>3.</strong> Vigilancia automática de BOE, BORM y UMU.</div>
+          <div><strong>4.</strong> Historial “antes / ahora” de cada cambio.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        Proyecto en desarrollo · Observatorio Normativo Universitario
+      </div>
+    </footer>
+
+    <script>
+      const search = document.querySelector('#search');
+      const ambito = document.querySelector('#ambito');
+      const materia = document.querySelector('#materia');
+      const estado = document.querySelector('#estado');
+      const cards = [...document.querySelectorAll('.card')];
+      const counter = document.querySelector('#counter');
+      const empty = document.querySelector('#empty');
+
+      function normalize(text) {
+        return text
+          .toLowerCase()
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '');
+      }
+
+      function updateResults() {
+        const query = normalize(search.value.trim());
+        const selectedAmbito = ambito.value;
+        const selectedMateria = materia.value;
+        const selectedEstado = estado.value;
+        let visible = 0;
+
+        cards.forEach((card) => {
+          const hayTexto =
+            !query ||
+            normalize(card.dataset.title).includes(query) ||
+            normalize(card.dataset.description).includes(query) ||
+            normalize(card.dataset.materias).includes(query);
+
+          const hayAmbito =
+            !selectedAmbito || card.dataset.ambito === selectedAmbito;
+
+          const hayMateria =
+            !selectedMateria ||
+            card.dataset.materias.split('|').includes(selectedMateria);
+
+          const hayEstado =
+            !selectedEstado || card.dataset.estado === selectedEstado;
+
+          const show = hayTexto && hayAmbito && hayMateria && hayEstado;
+          card.hidden = !show;
+          if (show) visible += 1;
+        });
+
+        counter.textContent = `${visible} ${visible === 1 ? 'resultado' : 'resultados'}`;
+        empty.hidden = visible !== 0;
+      }
+
+      [search, ambito, materia, estado].forEach((element) =>
+        element.addEventListener('input', updateResults)
+      );
+    </script>
+  </body>
+</html>

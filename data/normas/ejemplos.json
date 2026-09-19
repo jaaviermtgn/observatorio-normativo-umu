@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ejemplo-estatal-001",
+    "titulo": "Ejemplo de norma estatal universitaria",
+    "descripcion": "Registro de demostración para comprobar el funcionamiento del buscador y los filtros.",
+    "ambito": "Estado",
+    "tipo": "Ley",
+    "estado": "Pendiente de verificación",
+    "verificacion": "Ejemplo",
+    "materias": ["Sistema universitario", "Estudiantes"]
+  },
+  {
+    "id": "ejemplo-carm-001",
+    "titulo": "Ejemplo de disposición de la Región de Murcia",
+    "descripcion": "Registro de demostración de una futura norma o disposición autonómica relevante.",
+    "ambito": "Región de Murcia",
+    "tipo": "Decreto",
+    "estado": "Pendiente de verificación",
+    "verificacion": "Ejemplo",
+    "materias": ["Universidades", "Administración"]
+  },
+  {
+    "id": "ejemplo-umu-001",
+    "titulo": "Ejemplo de normativa interna de la Universidad de Murcia",
+    "descripcion": "Registro de prueba destinado a representar reglamentos, normas, resoluciones e instrucciones internas.",
+    "ambito": "Universidad de Murcia",
+    "tipo": "Reglamento",
+    "estado": "Pendiente de verificación",
+    "verificacion": "Ejemplo",
+    "materias": ["Evaluación", "Estudiantes"]
+  }
+]
