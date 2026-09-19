@@ -1513,3 +1513,44 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* =========================================================
+   FASE 8 · CATÁLOGO ESTATAL Y FILTROS AVANZADOS
+   ========================================================= */
+
+.filters--expanded {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.history-pending {
+  padding: 22px;
+  background: white;
+  border: 1px solid rgba(0, 32, 40, 0.13);
+  border-left: 4px solid var(--umu-red);
+}
+
+.history-pending strong {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 0.92rem;
+}
+
+.history-pending p {
+  margin: 0;
+  color: #5f6c6f;
+  line-height: 1.58;
+  font-size: 0.84rem;
+}
+
+@media (max-width: 1080px) {
+  .filters--expanded {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .filters--expanded {
+    grid-template-columns: 1fr;
+  }
+}

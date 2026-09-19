@@ -10,7 +10,9 @@ export function getStaticPaths() {
 }
 
 const { norma } = Astro.props;
-const numeroCambios = norma.historial.filter((item) => item.tipo === 'Modificación').length;
+const historialCurado = norma.historial ?? [];
+const numeroCambios = historialCurado.filter((item) => item.tipo === 'Modificación').length;
+const tieneHistorialCurado = historialCurado.length > 0;
 ---
 
 <html lang="es">
@@ -166,8 +168,17 @@ const numeroCambios = norma.historial.filter((item) => item.tipo === 'Modificaci
               </div>
 
               <div class="history-count">
-                <strong>{numeroCambios}</strong>
-                <span>{numeroCambios === 1 ? 'modificación' : 'modificaciones'} expresas registradas</span>
+                {tieneHistorialCurado ? (
+                  <>
+                    <strong>{numeroCambios}</strong>
+                    <span>{numeroCambios === 1 ? 'modificación' : 'modificaciones'} expresas en el historial curado</span>
+                  </>
+                ) : (
+                  <>
+                    <strong>—</strong>
+                    <span>histórico previo pendiente de incorporación</span>
+                  </>
+                )}
               </div>
             </div>
 
@@ -176,54 +187,65 @@ const numeroCambios = norma.historial.filter((item) => item.tipo === 'Modificaci
               <p>{norma.alcance_historial}</p>
             </div>
 
-            <ol class="timeline">
-              {norma.historial.map((item) => (
-                <li class="timeline-item">
-                  <div class="timeline-marker" aria-hidden="true"></div>
+            {tieneHistorialCurado ? (
+              <ol class="timeline">
+                {historialCurado.map((item) => (
+                  <li class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
 
-                  <div class="timeline-date">
-                    <strong>{item.fecha}</strong>
-                    <span class={`event-type event-type--${item.tipo.toLowerCase()}`}>
-                      {item.tipo}
-                    </span>
-                  </div>
-
-                  <article class="timeline-card">
-                    <h3>{item.titulo}</h3>
-                    <p>{item.descripcion}</p>
-
-                    {item.afecta.length > 0 && (
-                      <div class="affected-blocks">
-                        <span>Afecta a</span>
-                        <div>
-                          {item.afecta.map((bloque) => <strong>{bloque}</strong>)}
-                        </div>
-                      </div>
-                    )}
-
-                    <div class="timeline-meta">
-                      {item.entrada_vigor && (
-                        <span>En vigor desde {item.entrada_vigor}</span>
-                      )}
-
-                      {item.norma_modificadora && (
-                        <span>{item.norma_modificadora}</span>
-                      )}
+                    <div class="timeline-date">
+                      <strong>{item.fecha}</strong>
+                      <span class={`event-type event-type--${item.tipo.toLowerCase()}`}>
+                        {item.tipo}
+                      </span>
                     </div>
 
-                    <a
-                      class="official-inline-link"
-                      href={item.url}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Consultar en BOE
-                      <span aria-hidden="true">↗</span>
-                    </a>
-                  </article>
-                </li>
-              ))}
-            </ol>
+                    <article class="timeline-card">
+                      <h3>{item.titulo}</h3>
+                      <p>{item.descripcion}</p>
+
+                      {item.afecta.length > 0 && (
+                        <div class="affected-blocks">
+                          <span>Afecta a</span>
+                          <div>
+                            {item.afecta.map((bloque) => <strong>{bloque}</strong>)}
+                          </div>
+                        </div>
+                      )}
+
+                      <div class="timeline-meta">
+                        {item.entrada_vigor && (
+                          <span>En vigor desde {item.entrada_vigor}</span>
+                        )}
+
+                        {item.norma_modificadora && (
+                          <span>{item.norma_modificadora}</span>
+                        )}
+                      </div>
+
+                      <a
+                        class="official-inline-link"
+                        href={item.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Consultar en BOE
+                        <span aria-hidden="true">↗</span>
+                      </a>
+                    </article>
+                  </li>
+                ))}
+              </ol>
+            ) : (
+              <div class="history-pending">
+                <strong>Histórico anterior aún no incorporado manualmente</strong>
+                <p>
+                  La norma está incluida en la vigilancia automática del BOE. La primera
+                  ejecución del monitor creará su línea base actual; desde ese momento,
+                  cualquier nueva versión textual detectada quedará registrada para revisión.
+                </p>
+              </div>
+            )}
           </section>
 
 

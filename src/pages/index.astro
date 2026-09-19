@@ -4,6 +4,9 @@ import normas from '../../data/normas/catalogo.json';
 
 const materias = [...new Set(normas.flatMap((norma) => norma.materias))].sort();
 const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
+const tipos = [...new Set(normas.map((norma) => norma.tipo))].sort();
+const colectivos = [...new Set(normas.flatMap((norma) => norma.colectivos ?? []))].sort();
+const estados = [...new Set(normas.map((norma) => norma.estado))].sort();
 ---
 
 <html lang="es">
@@ -106,12 +109,20 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
             />
           </div>
 
-          <div class="filters">
+          <div class="filters filters--expanded">
             <div>
               <label for="ambito">Ámbito</label>
               <select id="ambito">
                 <option value="">Todos</option>
                 {ambitos.map((ambito) => <option value={ambito}>{ambito}</option>)}
+              </select>
+            </div>
+
+            <div>
+              <label for="tipo">Tipo</label>
+              <select id="tipo">
+                <option value="">Todos</option>
+                {tipos.map((tipo) => <option value={tipo}>{tipo}</option>)}
               </select>
             </div>
 
@@ -124,11 +135,18 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
             </div>
 
             <div>
+              <label for="colectivo">Colectivo</label>
+              <select id="colectivo">
+                <option value="">Todos</option>
+                {colectivos.map((colectivo) => <option value={colectivo}>{colectivo}</option>)}
+              </select>
+            </div>
+
+            <div>
               <label for="estado">Estado</label>
               <select id="estado">
                 <option value="">Todos</option>
-                <option value="Vigente">Vigente</option>
-                <option value="Pendiente de verificación">Pendiente de verificación</option>
+                {estados.map((estado) => <option value={estado}>{estado}</option>)}
               </select>
             </div>
           </div>
@@ -159,6 +177,8 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
               data-description={norma.descripcion.toLowerCase()}
               data-ambito={norma.ambito}
               data-materias={norma.materias.join('|')}
+              data-colectivos={(norma.colectivos ?? []).join('|')}
+              data-tipo={norma.tipo}
               data-estado={norma.estado}
             >
               <div class="card__accent" aria-hidden="true"></div>
@@ -256,7 +276,7 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
               <span>03</span>
               <div>
                 <strong>Historial de cambios</strong>
-                <p>Las fichas individuales ya registran versiones e hitos; el siguiente paso será automatizar su detección.</p>
+                <p>El monitor BOE está activo y se amplía automáticamente a las normas estatales marcadas para seguimiento.</p>
               </div>
             </article>
           </div>
@@ -289,7 +309,9 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
     <script>
       const search = document.querySelector('#search');
       const ambito = document.querySelector('#ambito');
+      const tipo = document.querySelector('#tipo');
       const materia = document.querySelector('#materia');
+      const colectivo = document.querySelector('#colectivo');
       const estado = document.querySelector('#estado');
       const cards = [...document.querySelectorAll('.card')];
       const counter = document.querySelector('#counter');
@@ -306,7 +328,9 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
       function updateResults() {
         const query = normalize(search.value.trim());
         const selectedAmbito = ambito.value;
+        const selectedTipo = tipo.value;
         const selectedMateria = materia.value;
+        const selectedColectivo = colectivo.value;
         const selectedEstado = estado.value;
         let visible = 0;
 
@@ -315,19 +339,29 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
             !query ||
             normalize(card.dataset.title).includes(query) ||
             normalize(card.dataset.description).includes(query) ||
-            normalize(card.dataset.materias).includes(query);
+            normalize(card.dataset.materias).includes(query) ||
+            normalize(card.dataset.colectivos).includes(query) ||
+            normalize(card.dataset.tipo).includes(query);
 
           const hayAmbito =
             !selectedAmbito || card.dataset.ambito === selectedAmbito;
+
+          const hayTipo =
+            !selectedTipo || card.dataset.tipo === selectedTipo;
 
           const hayMateria =
             !selectedMateria ||
             card.dataset.materias.split('|').includes(selectedMateria);
 
+          const hayColectivo =
+            !selectedColectivo ||
+            card.dataset.colectivos.split('|').includes(selectedColectivo);
+
           const hayEstado =
             !selectedEstado || card.dataset.estado === selectedEstado;
 
-          const show = hayTexto && hayAmbito && hayMateria && hayEstado;
+          const show =
+            hayTexto && hayAmbito && hayTipo && hayMateria && hayColectivo && hayEstado;
           card.hidden = !show;
           if (show) visible += 1;
         });
@@ -339,7 +373,7 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
         empty.hidden = visible !== 0;
       }
 
-      [search, ambito, materia, estado].forEach((element) =>
+      [search, ambito, tipo, materia, colectivo, estado].forEach((element) =>
         element.addEventListener('input', updateResults)
       );
     </script>
