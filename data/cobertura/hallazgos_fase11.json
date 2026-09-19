@@ -1,0 +1,78 @@
+{
+  "fecha": "2026-09-19",
+  "criterio": "Solo se promueve al catálogo cuando hay fuente primaria UMU o referencia oficial actual suficientemente concreta. El resto queda como evidencia de existencia/aplicación pendiente de fuente primaria.",
+  "hallazgos": [
+    {
+      "centro": "Facultad de Letras",
+      "tipo": "TFG/TFM",
+      "estado": "Fuente primaria localizada",
+      "url": "https://www.um.es/documents/117064/7643850/Reglamento+TFG+y+TFM+Facultad+V+7+2017pdf/e962fa8b-8ccd-41bf-a04e-314af66b654d"
+    },
+    {
+      "centro": "Facultad de Biología",
+      "tipo": "TFG/TFM",
+      "estado": "Fuente primaria localizada",
+      "url": "https://www.um.es/documents/119572/129047/Normativa+TFG-TFM+FB.pdf/3dafb905-0e7b-4050-8eee-e89d469c3e00"
+    },
+    {
+      "centro": "Facultad de Comunicación y Documentación",
+      "tipo": "TFG",
+      "estado": "Fuente primaria localizada",
+      "url": "https://www.um.es/documents/121627/11226325/TFG-Normativa.pdf/80774cab-bcc0-4060-834f-960c6cac0f54"
+    },
+    {
+      "centro": "Facultad de Bellas Artes",
+      "tipo": "TFG",
+      "estado": "Existencia/aplicación oficial acreditada; fuente primaria pendiente",
+      "url": "https://api.um.es/aulavirtual/guiasdocentes-api/public/v1/guias/1376/G/2025/E/html"
+    },
+    {
+      "centro": "Facultad de Economía y Empresa",
+      "tipo": "TFG",
+      "estado": "Manual vigente acreditado en guía 2026/27",
+      "url": "https://api.um.es/aulavirtual/guiasdocentes-api/public/v1/guias/3653/G/2026/E/html"
+    },
+    {
+      "centro": "Facultad de Economía y Empresa",
+      "tipo": "Prácticas",
+      "estado": "Manual/procedimientos actuales acreditados",
+      "url": "https://www.um.es/web/economiayempresa/estudios/practicas"
+    },
+    {
+      "centro": "Facultad de Matemáticas",
+      "tipo": "TFG",
+      "estado": "Página institucional localizada",
+      "url": "https://www.um.es/web/estudios/grados/matematicas/tfg"
+    },
+    {
+      "centro": "Facultad de Enfermería",
+      "tipo": "Evaluación",
+      "estado": "Procedimiento de incidencias localizado",
+      "url": "https://www.um.es/web/enfermeria/conoce-la-facultad/normativa/convocatoria-de-incidencias"
+    },
+    {
+      "centro": "Facultad de Psicología y Logopedia",
+      "tipo": "Prácticum Logopedia",
+      "estado": "Existencia/aplicación acreditada; fuente primaria pendiente",
+      "url": "https://api.um.es/aulavirtual/guiasdocentes-api/public/v1/guias/1087/G/2025/E/html"
+    },
+    {
+      "centro": "Facultad de Trabajo Social",
+      "tipo": "Prácticas",
+      "estado": "Existencia/aplicación acreditada; fuente primaria pendiente",
+      "url": "https://api.um.es/aulavirtual/guiasdocentes-api/public/v1/guias/5717/G/2026/E/html"
+    },
+    {
+      "centro": "Facultad de Veterinaria",
+      "tipo": "TFG/TFM",
+      "estado": "Normativa identificada y página primaria de centro localizada",
+      "url": "https://www.um.es/web/veterinaria/conoce-la-facultad/normativa"
+    },
+    {
+      "centro": "Facultad de Informática",
+      "tipo": "Representación estudiantil",
+      "estado": "RRI + clubes + comisiones localizados",
+      "url": "https://dafi.inf.um.es/documentos/"
+    }
+  ]
+}

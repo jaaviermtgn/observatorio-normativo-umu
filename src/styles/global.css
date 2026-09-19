@@ -1871,3 +1871,34 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* =========================================================
+   FASE 11 · CIERRE DE CENTROS Y FILTROS INTERNOS
+   ========================================================= */
+
+.filters--expanded {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.coverage-items > div {
+  grid-template-columns: minmax(150px, 1fr) minmax(180px, 1.4fr) auto;
+}
+
+.coverage-items small {
+  grid-column: 2 / -1;
+  color: #7a8688;
+  line-height: 1.4;
+}
+
+@media (max-width: 1080px) {
+  .filters--expanded {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .filters--expanded {
+    grid-template-columns: 1fr;
+  }
+}

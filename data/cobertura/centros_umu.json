@@ -1,6 +1,6 @@
 {
   "fecha_revision": "19/09/2026",
-  "criterio": "Inventario de cobertura. Un estado pendiente no significa inexistencia de la norma: significa que todavía no se ha localizado y verificado una fuente oficial apta para el catálogo.",
+  "criterio": "Inventario de cobertura reforzado. 'Verificado' exige fuente primaria UMU o página institucional específica. 'Existencia/aplicación acreditada' se usa cuando una guía docente oficial vigente cita una norma o manual pero todavía no se ha localizado su documento primario. 'Pendiente' no equivale a inexistencia.",
   "centros": [
     {
       "id": "facultad-letras",
@@ -17,8 +17,8 @@
           "url": null
         },
         "normativa_tfg_tfm": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Verificado",
+          "url": "https://www.um.es/documents/117064/7643850/Reglamento+TFG+y+TFM+Facultad+V+7+2017pdf/e962fa8b-8ccd-41bf-a04e-314af66b654d"
         },
         "normativa_practicas_practicum": {
           "estado": "Pendiente de localizar/verificar",
@@ -49,8 +49,8 @@
           "url": null
         },
         "normativa_tfg_tfm": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Verificado",
+          "url": "https://www.um.es/documents/119572/129047/Normativa+TFG-TFM+FB.pdf/3dafb905-0e7b-4050-8eee-e89d469c3e00"
         },
         "normativa_practicas_practicum": {
           "estado": "Pendiente de localizar/verificar",
@@ -82,16 +82,15 @@
         },
         "normativa_tfg_tfm": {
           "estado": "Verificado",
-          "url": "https://www.um.es/documents/14152/16808989/Reglamento-TFG-2019-20pdf/0f35832e-b52e-4a48-8293-a7adb0864b51",
-          "nota": "Reglamento TFG de centro."
+          "url": "https://www.um.es/documents/14152/16808989/Reglamento-TFG-2019-20pdf/0f35832e-b52e-4a48-8293-a7adb0864b51"
         },
         "normativa_practicas_practicum": {
           "estado": "Pendiente de localizar/verificar",
           "url": null
         },
         "otra_normativa_academica": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Verificado",
+          "url": "https://www.um.es/documents/14152/23085107/Normativa+ética+Evaluaciones+FQ+UMU_V02.pdf"
         },
         "normativa_representacion_elecciones": {
           "estado": "Pendiente de localizar/verificar",
@@ -114,8 +113,8 @@
           "url": null
         },
         "normativa_tfg_tfm": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Verificado",
+          "url": "https://www.um.es/documents/121627/11226325/TFG-Normativa.pdf/80774cab-bcc0-4060-834f-960c6cac0f54"
         },
         "normativa_practicas_practicum": {
           "estado": "Pendiente de localizar/verificar",
@@ -146,12 +145,12 @@
           "url": null
         },
         "normativa_tfg_tfm": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Aplicación actual acreditada; documento en recursos/web del centro",
+          "url": "https://api.um.es/aulavirtual/guiasdocentes-api/public/v1/guias/3653/G/2026/E/html"
         },
         "normativa_practicas_practicum": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Aplicación actual acreditada",
+          "url": "https://www.um.es/web/economiayempresa/estudios/practicas"
         },
         "otra_normativa_academica": {
           "estado": "Pendiente de localizar/verificar",
@@ -178,8 +177,8 @@
           "url": null
         },
         "normativa_tfg_tfm": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Existencia actual acreditada; manual primario pendiente de localizar",
+          "url": "https://api.um.es/aulavirtual/guiasdocentes-api/public/v1/guias/2097/G/2025/E/html"
         },
         "normativa_practicas_practicum": {
           "estado": "Pendiente de localizar/verificar",
@@ -210,8 +209,9 @@
           "url": null
         },
         "normativa_tfg_tfm": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Existencia y aplicación actual acreditadas; fuente primaria pendiente",
+          "url": "https://api.um.es/aulavirtual/guiasdocentes-api/public/v1/guias/1376/G/2025/E/html",
+          "nota": "La guía oficial confirma normativa de TFG propia aprobada por Junta de Centro."
         },
         "normativa_practicas_practicum": {
           "estado": "Pendiente de localizar/verificar",
@@ -242,8 +242,8 @@
           "url": null
         },
         "normativa_tfg_tfm": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Existencia acreditada; fuente primaria pendiente",
+          "url": "https://api.um.es/aulavirtual/guiasdocentes-api/public/v1/guias/5717/G/2026/E/html"
         },
         "normativa_practicas_practicum": {
           "estado": "Pendiente de localizar/verificar",
@@ -271,8 +271,7 @@
         },
         "rri_delegacion": {
           "estado": "Verificado",
-          "url": "https://dafi.inf.um.es/documentos/",
-          "nota": "La página lista RRI-DAFI.pdf."
+          "url": "https://dafi.inf.um.es/documentos/"
         },
         "normativa_tfg_tfm": {
           "estado": "Pendiente de localizar/verificar",
@@ -287,8 +286,9 @@
           "url": null
         },
         "normativa_representacion_elecciones": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Parcialmente verificado",
+          "url": "https://dafi.inf.um.es/documentos/",
+          "nota": "Localizados RRI, Reglamento de Clubes y Reglamento de Comisiones de DAFI."
         }
       }
     },
@@ -340,8 +340,7 @@
         },
         "normativa_tfg_tfm": {
           "estado": "Parcialmente verificado",
-          "url": "https://www.um.es/documents/652345/0/NORMATIVA+POR+LA+QUE+SE+REGULAN+LOS+TRABAJOS+DE+FIN+DE+GRADO+Julio+2023-2+%282%29.pdf/77a4fb32-8865-6e65-07a4-143651d4b51f?t=1695980305236",
-          "nota": "Localizada normativa de TFG colectivo; falta cerrar toda la normativa TFG/TFM del centro."
+          "url": "https://www.um.es/documents/652345/0/NORMATIVA+POR+LA+QUE+SE+REGULAN+LOS+TRABAJOS+DE+FIN+DE+GRADO+Julio+2023-2+%282%29.pdf/77a4fb32-8865-6e65-07a4-143651d4b51f?t=1695980305236"
         },
         "normativa_practicas_practicum": {
           "estado": "Pendiente de localizar/verificar",
@@ -372,8 +371,8 @@
           "url": null
         },
         "normativa_tfg_tfm": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Verificado",
+          "url": "https://www.um.es/web/estudios/grados/matematicas/tfg"
         },
         "normativa_practicas_practicum": {
           "estado": "Pendiente de localizar/verificar",
@@ -440,12 +439,12 @@
           "url": null
         },
         "normativa_practicas_practicum": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Existencia y aplicación actual acreditadas; documentación dispersa",
+          "url": "https://api.um.es/aulavirtual/guiasdocentes-api/public/v1/guias/7057/P/2025/E/html"
         },
         "otra_normativa_academica": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Parcialmente verificado",
+          "url": "https://www.um.es/web/enfermeria/conoce-la-facultad/normativa/convocatoria-de-incidencias"
         },
         "normativa_representacion_elecciones": {
           "estado": "Pendiente de localizar/verificar",
@@ -568,8 +567,9 @@
           "url": null
         },
         "normativa_practicas_practicum": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Existencia y aplicación actual acreditadas; fuente primaria pendiente",
+          "url": "https://api.um.es/aulavirtual/guiasdocentes-api/public/v1/guias/1087/G/2025/E/html",
+          "nota": "La guía oficial de Logopedia remite a Normativa del Prácticum de Logopedia en la web de la Facultad."
         },
         "otra_normativa_academica": {
           "estado": "Pendiente de localizar/verificar",
@@ -600,8 +600,9 @@
           "url": null
         },
         "normativa_practicas_practicum": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Existencia y aplicación actual acreditadas; fuente primaria pendiente",
+          "url": "https://api.um.es/aulavirtual/guiasdocentes-api/public/v1/guias/5717/G/2026/E/html",
+          "nota": "Normativa interna aprobada por Comisión de Prácticas 24/07/2015 y Junta de Facultad 23/07/2016."
         },
         "otra_normativa_academica": {
           "estado": "Pendiente de localizar/verificar",
@@ -660,8 +661,8 @@
           "url": null
         },
         "normativa_tfg_tfm": {
-          "estado": "Pendiente de localizar/verificar",
-          "url": null
+          "estado": "Verificado",
+          "url": "https://www.um.es/web/veterinaria/conoce-la-facultad/normativa"
         },
         "normativa_practicas_practicum": {
           "estado": "Pendiente de localizar/verificar",
@@ -918,6 +919,29 @@
       "estado": "Vigencia de referencia confirmada en guías docentes actuales; fuente normativa original pendiente de localizar",
       "prioridad": "Alta",
       "motivo": "Las guías docentes 2026/2027 siguen remitiendo a ella para medidas de equiparación e inclusión."
+    }
+  ],
+  "otros_ambitos_a_cubrir": [
+    {
+      "ambito": "Departamentos",
+      "estado": "Inventario específico pendiente",
+      "criterio": "Se incorporarán normas departamentales que creen obligaciones o procedimientos para estudiantes/PDI/PTGAS.",
+      "ejemplo_localizado": "Existen guías docentes que remiten a normas departamentales de comportamiento o funcionamiento; requieren fuente primaria antes de catalogarse."
+    },
+    {
+      "ambito": "Servicios y unidades",
+      "estado": "Inventario específico pendiente",
+      "criterio": "Protocolos y normas de servicios (biblioteca, deportes, ADYV, COIE, movilidad, laboratorios, clínicas, etc.) se incorporarán cuando tengan efectos normativos o procedimentales."
+    },
+    {
+      "ambito": "Escuelas, institutos y estructuras universitarias",
+      "estado": "Inventario específico pendiente",
+      "criterio": "RRI y reglamentos propios de escuelas, institutos universitarios, clínicas, centros de investigación y otras estructuras se revisarán separadamente."
+    },
+    {
+      "ambito": "Delegaciones de Estudiantes",
+      "estado": "Búsqueda sistemática activa",
+      "criterio": "Cada Delegación debe disponer de RRI conforme a los Estatutos de 2026; se mantendrá una casilla individual por centro hasta localizar la fuente."
     }
   ]
 }

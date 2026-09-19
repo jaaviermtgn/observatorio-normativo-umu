@@ -10,6 +10,8 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
 const tipos = [...new Set(normas.map((norma) => norma.tipo))].sort();
 const colectivos = [...new Set(normas.flatMap((norma) => norma.colectivos ?? []))].sort();
 const estados = [...new Set(normas.map((norma) => norma.estado))].sort();
+const nivelesInternos = [...new Set(normas.map((norma) => norma.nivel_interno).filter(Boolean))].sort();
+const centros = [...new Set(normas.map((norma) => norma.centro).filter(Boolean))].sort();
 const novedadesPendientes = novedadesBorm
   .filter((item) => item.estado_revision === 'Pendiente de revisión')
   .slice(0, 12);
@@ -166,6 +168,22 @@ const objetivosPendientes = centrosCobertura.reduce(
             </div>
 
             <div>
+              <label for="nivel">Nivel UMU</label>
+              <select id="nivel">
+                <option value="">Todos</option>
+                {nivelesInternos.map((nivel) => <option value={nivel}>{nivel}</option>)}
+              </select>
+            </div>
+
+            <div>
+              <label for="centro">Centro</label>
+              <select id="centro">
+                <option value="">Todos</option>
+                {centros.map((centro) => <option value={centro}>{centro}</option>)}
+              </select>
+            </div>
+
+            <div>
               <label for="estado">Estado</label>
               <select id="estado">
                 <option value="">Todos</option>
@@ -202,6 +220,8 @@ const objetivosPendientes = centrosCobertura.reduce(
               data-materias={norma.materias.join('|')}
               data-colectivos={(norma.colectivos ?? []).join('|')}
               data-tipo={norma.tipo}
+              data-nivel={norma.nivel_interno ?? ''}
+              data-centro={norma.centro ?? ''}
               data-estado={norma.estado}
             >
               <div class="card__accent" aria-hidden="true"></div>
@@ -356,8 +376,11 @@ const objetivosPendientes = centrosCobertura.reduce(
                         objetivo.estado.startsWith('Pendiente') && 'coverage-status--pending'
                       ]}>{objetivo.estado}</strong>
                       {objetivo.url && (
-                        <a href={objetivo.url} target="_blank" rel="noreferrer">Fuente ↗</a>
+                        <a href={objetivo.url} target="_blank" rel="noreferrer">
+                          {objetivo.estado === 'Verificado' ? 'Fuente ↗' : 'Evidencia ↗'}
+                        </a>
                       )}
+                      {objetivo.nota && <small>{objetivo.nota}</small>}
                     </div>
                   ))}
                 </div>
@@ -486,6 +509,8 @@ const objetivosPendientes = centrosCobertura.reduce(
       const tipo = document.querySelector('#tipo');
       const materia = document.querySelector('#materia');
       const colectivo = document.querySelector('#colectivo');
+      const nivel = document.querySelector('#nivel');
+      const centro = document.querySelector('#centro');
       const estado = document.querySelector('#estado');
       const cards = [...document.querySelectorAll('.card')];
       const counter = document.querySelector('#counter');
@@ -505,6 +530,8 @@ const objetivosPendientes = centrosCobertura.reduce(
         const selectedTipo = tipo.value;
         const selectedMateria = materia.value;
         const selectedColectivo = colectivo.value;
+        const selectedNivel = nivel.value;
+        const selectedCentro = centro.value;
         const selectedEstado = estado.value;
         let visible = 0;
 
@@ -515,7 +542,9 @@ const objetivosPendientes = centrosCobertura.reduce(
             normalize(card.dataset.description).includes(query) ||
             normalize(card.dataset.materias).includes(query) ||
             normalize(card.dataset.colectivos).includes(query) ||
-            normalize(card.dataset.tipo).includes(query);
+            normalize(card.dataset.tipo).includes(query) ||
+            normalize(card.dataset.centro).includes(query) ||
+            normalize(card.dataset.nivel).includes(query);
 
           const hayAmbito =
             !selectedAmbito || card.dataset.ambito === selectedAmbito;
@@ -531,11 +560,18 @@ const objetivosPendientes = centrosCobertura.reduce(
             !selectedColectivo ||
             card.dataset.colectivos.split('|').includes(selectedColectivo);
 
+          const hayNivel =
+            !selectedNivel || card.dataset.nivel === selectedNivel;
+
+          const hayCentro =
+            !selectedCentro || card.dataset.centro === selectedCentro;
+
           const hayEstado =
             !selectedEstado || card.dataset.estado === selectedEstado;
 
           const show =
-            hayTexto && hayAmbito && hayTipo && hayMateria && hayColectivo && hayEstado;
+            hayTexto && hayAmbito && hayTipo && hayMateria && hayColectivo &&
+            hayNivel && hayCentro && hayEstado;
           card.hidden = !show;
           if (show) visible += 1;
         });
@@ -547,7 +583,7 @@ const objetivosPendientes = centrosCobertura.reduce(
         empty.hidden = visible !== 0;
       }
 
-      [search, ambito, tipo, materia, colectivo, estado].forEach((element) =>
+      [search, ambito, tipo, materia, colectivo, nivel, centro, estado].forEach((element) =>
         element.addEventListener('input', updateResults)
       );
     </script>

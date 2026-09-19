@@ -58,11 +58,67 @@
       "centro": null
     },
     {
+      "id": "UMU-BIO-TFGTFM",
+      "titulo": "Normativa de TFG/TFM de la Facultad de Biología",
+      "url": "https://www.um.es/documents/119572/129047/Normativa+TFG-TFM+FB.pdf/3dafb905-0e7b-4050-8eee-e89d469c3e00",
+      "categoria": "Centro",
+      "centro": "Facultad de Biología"
+    },
+    {
+      "id": "UMU-CYD-TFG-2018",
+      "titulo": "Normativa del Trabajo Fin de Grado de la Facultad de Comunicación y Documentación",
+      "url": "https://www.um.es/documents/121627/11226325/TFG-Normativa.pdf/80774cab-bcc0-4060-834f-960c6cac0f54",
+      "categoria": "Centro",
+      "centro": "Facultad de Comunicación y Documentación"
+    },
+    {
       "id": "UMU-DERECHO-TFG-COLECTIVO-2023",
       "titulo": "Normativa por la que se regulan los TFG en la modalidad de proyecto colectivo de la Facultad de Derecho",
       "url": "https://www.um.es/documents/652345/0/NORMATIVA+POR+LA+QUE+SE+REGULAN+LOS+TRABAJOS+DE+FIN+DE+GRADO+Julio+2023-2+%282%29.pdf/77a4fb32-8865-6e65-07a4-143651d4b51f?t=1695980305236",
       "categoria": "Centro",
       "centro": "Facultad de Derecho"
+    },
+    {
+      "id": "UMU-DERECHO-TFM",
+      "titulo": "Normativa y criterios de TFM de la Facultad de Derecho",
+      "url": "https://www.um.es/c/document_library/get_file?uuid=0ae39fb0-5597-4ec4-8fdf-d59e51b4e91c&groupId=652345",
+      "categoria": "Centro",
+      "centro": "Facultad de Derecho"
+    },
+    {
+      "id": "UMU-ECO-TFG-MANUAL-2026",
+      "titulo": "Manual de la asignatura Trabajo Fin de Grado de la Facultad de Economía y Empresa (2026)",
+      "url": "https://www.um.es/web/economiayempresa/",
+      "categoria": "Centro",
+      "centro": "Facultad de Economía y Empresa"
+    },
+    {
+      "id": "UMU-ECO-PRACTICAS-2026",
+      "titulo": "Manual y procedimientos de Prácticas Académicas Externas de la Facultad de Economía y Empresa",
+      "url": "https://www.um.es/web/economiayempresa/estudios/practicas",
+      "categoria": "Centro",
+      "centro": "Facultad de Economía y Empresa"
+    },
+    {
+      "id": "UMU-ENF-INCIDENCIAS",
+      "titulo": "Procedimiento de convocatoria de incidencias de la Facultad de Enfermería",
+      "url": "https://www.um.es/web/enfermeria/conoce-la-facultad/normativa/convocatoria-de-incidencias",
+      "categoria": "Centro",
+      "centro": "Facultad de Enfermería"
+    },
+    {
+      "id": "UMU-LETRAS-TFGTFM-2017",
+      "titulo": "Reglamento de TFG/TFM de la Facultad de Letras",
+      "url": "https://www.um.es/documents/117064/7643850/Reglamento+TFG+y+TFM+Facultad+V+7+2017pdf/e962fa8b-8ccd-41bf-a04e-314af66b654d",
+      "categoria": "Centro",
+      "centro": "Facultad de Letras"
+    },
+    {
+      "id": "UMU-MAT-TFG",
+      "titulo": "Normativa y procedimientos de Trabajo Fin de Grado de la Facultad de Matemáticas",
+      "url": "https://www.um.es/web/estudios/grados/matematicas/tfg",
+      "categoria": "Centro",
+      "centro": "Facultad de Matemáticas"
     },
     {
       "id": "UMU-FQ-ETICA-EVAL",
@@ -79,11 +135,32 @@
       "centro": "Facultad de Química"
     },
     {
+      "id": "UMU-VET-TFGTFM-2016",
+      "titulo": "Normativa por la que se regulan los TFG/TFM en la Facultad de Veterinaria",
+      "url": "https://www.um.es/web/veterinaria/conoce-la-facultad/normativa",
+      "categoria": "Centro",
+      "centro": "Facultad de Veterinaria"
+    },
+    {
       "id": "UMU-CONVIVENCIA-2023",
       "titulo": "Reglamento de Convivencia de la Universidad de Murcia",
       "url": "https://www.borm.es/services/boletin/ano/2023/numero/61/pdf",
       "categoria": "Comunidad universitaria",
       "centro": null
+    },
+    {
+      "id": "UMU-DAFI-CLUBES",
+      "titulo": "Reglamento de Clubes de la Delegación de Alumnos de la Facultad de Informática",
+      "url": "https://dafi.inf.um.es/documentos/",
+      "categoria": "Delegación de Estudiantes",
+      "centro": "Facultad de Informática"
+    },
+    {
+      "id": "UMU-DAFI-COMISIONES",
+      "titulo": "Reglamento de Comisiones de la Delegación de Alumnos de la Facultad de Informática",
+      "url": "https://dafi.inf.um.es/documentos/",
+      "categoria": "Delegación de Estudiantes",
+      "centro": "Facultad de Informática"
     },
     {
       "id": "UMU-DAFI-RRI",
@@ -252,6 +329,42 @@
       "id": "facultad-veterinaria-normativa",
       "titulo": "Normativa · Facultad de Veterinaria",
       "url": "https://www.um.es/web/veterinaria/contenido/normativa",
+      "centro": "Facultad de Veterinaria"
+    },
+    {
+      "id": "letras-normativa",
+      "titulo": "Normativa Facultad de Letras",
+      "url": "https://www.um.es/web/letras/conoce-la-facultad/normativa",
+      "centro": "Facultad de Letras"
+    },
+    {
+      "id": "comunicacion-normativa",
+      "titulo": "Normativa Facultad de Comunicación y Documentación",
+      "url": "https://www.um.es/en/web/comunicacion/conoce-la-facultad/normativa",
+      "centro": "Facultad de Comunicación y Documentación"
+    },
+    {
+      "id": "economia-practicas",
+      "titulo": "Prácticas Facultad de Economía y Empresa",
+      "url": "https://www.um.es/web/economiayempresa/estudios/practicas",
+      "centro": "Facultad de Economía y Empresa"
+    },
+    {
+      "id": "enfermeria-normativa",
+      "titulo": "Normativa Facultad de Enfermería",
+      "url": "https://www.um.es/web/enfermeria/conoce-la-facultad/normativa",
+      "centro": "Facultad de Enfermería"
+    },
+    {
+      "id": "matematicas-tfg",
+      "titulo": "TFG Facultad de Matemáticas",
+      "url": "https://www.um.es/web/estudios/grados/matematicas/tfg",
+      "centro": "Facultad de Matemáticas"
+    },
+    {
+      "id": "veterinaria-normativa",
+      "titulo": "Normativa Facultad de Veterinaria",
+      "url": "https://www.um.es/web/veterinaria/conoce-la-facultad/normativa",
       "centro": "Facultad de Veterinaria"
     }
   ],
