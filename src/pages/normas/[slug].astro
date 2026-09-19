@@ -84,7 +84,7 @@ const tieneHistorialCurado = historialCurado.length > 0;
               <strong>{norma.estado}</strong>
               <dl>
                 <div>
-                  <dt>Última actualización BOE</dt>
+                  <dt>{norma.actualizacion_label ?? 'Última actualización'}</dt>
                   <dd>{norma.ultima_actualizacion}</dd>
                 </div>
                 <div>
@@ -135,13 +135,18 @@ const tieneHistorialCurado = historialCurado.length > 0;
                 <strong>{norma.publicacion}</strong>
               </div>
               <div>
-                <span>BOE</span>
-                <strong>Núm. {norma.boe_numero}</strong>
+                <span>{norma.fuente}</span>
+                <strong>
+                  Núm. {norma.boletin_numero ?? norma.boe_numero}
+                  {norma.publicacion_numero ? ` · Pub. ${norma.publicacion_numero}` : ''}
+                </strong>
               </div>
-              <div>
-                <span>Entrada en vigor</span>
-                <strong>{norma.entrada_vigor}</strong>
-              </div>
+              {norma.entrada_vigor && (
+                <div>
+                  <span>Entrada en vigor</span>
+                  <strong>{norma.entrada_vigor}</strong>
+                </div>
+              )}
               <div>
                 <span>Departamento</span>
                 <strong>{norma.departamento}</strong>
@@ -159,6 +164,22 @@ const tieneHistorialCurado = historialCurado.length > 0;
               {norma.materias.map((materia) => <span>{materia}</span>)}
             </div>
           </section>
+
+          {norma.alerta_tramitacion && (
+            <section class="detail-section">
+              <div class="legislative-alert">
+                <div>
+                  <p class="eyebrow eyebrow--red">NORMA EN TRAMITACIÓN</p>
+                  <h2>{norma.alerta_tramitacion.titulo}</h2>
+                  <p>{norma.alerta_tramitacion.descripcion}</p>
+                  <span>Última actualización oficial: {norma.alerta_tramitacion.fecha_actualizacion}</span>
+                </div>
+                <a href={norma.alerta_tramitacion.url} target="_blank" rel="noreferrer">
+                  Consultar tramitación oficial ↗
+                </a>
+              </div>
+            </section>
+          )}
 
           <section class="detail-section" id="historial">
             <div class="detail-section__heading detail-section__heading--split">
@@ -229,7 +250,7 @@ const tieneHistorialCurado = historialCurado.length > 0;
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Consultar en BOE
+                        Consultar en {norma.fuente}
                         <span aria-hidden="true">↗</span>
                       </a>
                     </article>
@@ -240,9 +261,9 @@ const tieneHistorialCurado = historialCurado.length > 0;
               <div class="history-pending">
                 <strong>Histórico anterior aún no incorporado manualmente</strong>
                 <p>
-                  La norma está incluida en la vigilancia automática del BOE. La primera
-                  ejecución del monitor creará su línea base actual; desde ese momento,
-                  cualquier nueva versión textual detectada quedará registrada para revisión.
+                  {norma.fuente === 'BOE'
+                    ? 'La norma está incluida en la vigilancia automática del BOE. El monitor compara las nuevas versiones textuales publicadas desde su línea base.'
+                    : 'La norma está incluida en la vigilancia diaria del BORM. Las nuevas publicaciones potencialmente relacionadas se detectan automáticamente y quedan pendientes de revisión humana antes de incorporarse al historial.'}
                 </p>
               </div>
             )}
@@ -314,29 +335,53 @@ const tieneHistorialCurado = historialCurado.length > 0;
             </div>
 
             <div class="official-sources">
-              <a href={norma.url_oficial} target="_blank" rel="noreferrer">
-                <span>
-                  <small>BOE</small>
-                  <strong>Texto consolidado</strong>
-                </span>
-                <span aria-hidden="true">↗</span>
-              </a>
+              {norma.fuente === 'BOE' ? (
+                <>
+                  <a href={norma.url_oficial} target="_blank" rel="noreferrer">
+                    <span>
+                      <small>BOE</small>
+                      <strong>Texto consolidado</strong>
+                    </span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
 
-              <a href={norma.url_publicacion} target="_blank" rel="noreferrer">
-                <span>
-                  <small>BOE</small>
-                  <strong>Publicación original</strong>
-                </span>
-                <span aria-hidden="true">↗</span>
-              </a>
+                  <a href={norma.url_publicacion} target="_blank" rel="noreferrer">
+                    <span>
+                      <small>BOE</small>
+                      <strong>Publicación original</strong>
+                    </span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
 
-              <a href={norma.eli} target="_blank" rel="noreferrer">
-                <span>
-                  <small>ELI</small>
-                  <strong>Identificador Europeo de Legislación</strong>
-                </span>
-                <span aria-hidden="true">↗</span>
-              </a>
+                  <a href={norma.eli} target="_blank" rel="noreferrer">
+                    <span>
+                      <small>ELI</small>
+                      <strong>Identificador Europeo de Legislación</strong>
+                    </span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </>
+              ) : (
+                <>
+                  <a href={norma.url_oficial} target="_blank" rel="noreferrer">
+                    <span>
+                      <small>BORM</small>
+                      <strong>Publicación oficial</strong>
+                    </span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+
+                  {norma.url_contexto && (
+                    <a href={norma.url_contexto} target="_blank" rel="noreferrer">
+                      <span>
+                        <small>CARM</small>
+                        <strong>Contexto normativo oficial</strong>
+                      </span>
+                      <span aria-hidden="true">↗</span>
+                    </a>
+                  )}
+                </>
+              )}
             </div>
           </section>
 
@@ -346,16 +391,17 @@ const tieneHistorialCurado = historialCurado.length > 0;
                 <p class="eyebrow eyebrow--red">VIGILANCIA NORMATIVA</p>
                 <h2>{norma.seguimiento}</h2>
                 <p>
-                  Esta ficha está incluida en la vigilancia automática. El robot compara
-                  diariamente el índice de bloques de la legislación consolidada del BOE y,
-                  cuando detecta una nueva versión textual, conserva la versión anterior y
-                  la nueva para facilitar su revisión.
+                  {norma.fuente === 'BOE'
+                    ? 'Esta ficha está incluida en la vigilancia automática. El robot compara diariamente el índice de bloques de la legislación consolidada del BOE y conserva las versiones anterior y nueva cuando detecta cambios.'
+                    : 'Esta ficha forma parte del ámbito de vigilancia del BORM. El sistema revisa cada nuevo boletín, identifica disposiciones potencialmente universitarias y las envía a revisión humana antes de alterar el catálogo jurídico.'}
                 </p>
               </div>
 
               <div class="monitor-status monitor-status--active">
                 <span>ACTIVA</span>
-                <strong>Comprobación diaria del BOE</strong>
+                <strong>
+                  {norma.fuente === 'BOE' ? 'Comprobación diaria del BOE' : 'Revisión diaria del BORM'}
+                </strong>
               </div>
             </div>
           </section>

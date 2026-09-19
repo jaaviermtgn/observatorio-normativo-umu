@@ -1,12 +1,16 @@
 ---
 import '../styles/global.css';
 import normas from '../../data/normas/catalogo.json';
+import novedadesBorm from '../../data/novedades/borm.json';
 
 const materias = [...new Set(normas.flatMap((norma) => norma.materias))].sort();
 const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
 const tipos = [...new Set(normas.map((norma) => norma.tipo))].sort();
 const colectivos = [...new Set(normas.flatMap((norma) => norma.colectivos ?? []))].sort();
 const estados = [...new Set(normas.map((norma) => norma.estado))].sort();
+const novedadesPendientes = novedadesBorm
+  .filter((item) => item.estado_revision === 'Pendiente de revisión')
+  .slice(0, 12);
 ---
 
 <html lang="es">
@@ -211,12 +215,14 @@ const estados = [...new Set(normas.map((norma) => norma.estado))].sort();
                   <dt>Publicación</dt>
                   <dd>{norma.publicacion}</dd>
                 </div>
+                {norma.entrada_vigor && (
                 <div>
                   <dt>Entrada en vigor</dt>
                   <dd>{norma.entrada_vigor}</dd>
                 </div>
+              )}
                 <div>
-                  <dt>Última actualización BOE</dt>
+                  <dt>{norma.actualizacion_label ?? 'Última actualización'}</dt>
                   <dd>{norma.ultima_actualizacion}</dd>
                 </div>
               </dl>
@@ -234,7 +240,7 @@ const estados = [...new Set(normas.map((norma) => norma.estado))].sort();
                     target="_blank"
                     rel="noreferrer"
                   >
-                    BOE
+                    {norma.fuente}
                     <span aria-hidden="true">↗</span>
                   </a>
                 </div>
@@ -247,6 +253,47 @@ const estados = [...new Set(normas.map((norma) => norma.estado))].sort();
           No hay resultados con esos filtros.
         </p>
       </section>
+
+      {novedadesPendientes.length > 0 && (
+        <section class="container section borm-review" id="novedades-borm">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow eyebrow--red">VIGILANCIA BORM</p>
+              <h2>Novedades pendientes de revisión</h2>
+              <p class="section-description">
+                El monitor ha localizado publicaciones potencialmente relevantes. No se
+                incorporan al catálogo jurídico hasta que hayan sido revisadas.
+              </p>
+            </div>
+            <div class="result-counter">
+              <strong>{novedadesPendientes.length}</strong>
+              <span>pendientes</span>
+            </div>
+          </div>
+
+          <div class="borm-review-grid">
+            {novedadesPendientes.map((item) => (
+              <article class="borm-review-card">
+                <div class="borm-review-card__meta">
+                  <span>BORM {item.boletin_numero}</span>
+                  <span>{item.fecha_boletin}</span>
+                </div>
+                <span class="review-type">{item.clasificacion}</span>
+                <h3>{item.titulo}</h3>
+                <p>
+                  Coincidencias: {item.motivos.join(', ')}
+                </p>
+                <div class="borm-review-card__footer">
+                  <span>Publicación {item.publicacion_numero}</span>
+                  <a href={item.url_boletin} target="_blank" rel="noreferrer">
+                    Revisar BORM ↗
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section class="method-section">
         <div class="container method-grid">
@@ -276,7 +323,7 @@ const estados = [...new Set(normas.map((norma) => norma.estado))].sort();
               <span>03</span>
               <div>
                 <strong>Historial de cambios</strong>
-                <p>El monitor BOE está activo y se amplía automáticamente a las normas estatales marcadas para seguimiento.</p>
+                <p>El BOE se compara por bloques y el BORM se revisa diariamente para detectar nuevas publicaciones universitarias que pasan a revisión humana.</p>
               </div>
             </article>
           </div>

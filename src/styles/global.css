@@ -1554,3 +1554,123 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* =========================================================
+   FASE 9 · REGIÓN DE MURCIA Y VIGILANCIA BORM
+   ========================================================= */
+
+.borm-review {
+  padding-top: 16px;
+}
+
+.borm-review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.borm-review-card {
+  background: white;
+  border: 1px solid rgba(0, 32, 40, 0.13);
+  border-top: 4px solid var(--umu-red);
+  padding: 22px;
+}
+
+.borm-review-card__meta,
+.borm-review-card__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+}
+
+.borm-review-card__meta {
+  color: #748083;
+  font-size: 0.74rem;
+}
+
+.review-type {
+  display: inline-flex;
+  margin: 14px 0 10px;
+  padding: 5px 8px;
+  background: var(--umu-ivory);
+  color: var(--umu-blue);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.borm-review-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.08rem;
+}
+
+.borm-review-card > p {
+  color: #667477;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.borm-review-card__footer {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #e2e4e1;
+  font-size: 0.76rem;
+}
+
+.borm-review-card__footer a {
+  color: var(--umu-red);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.legislative-alert {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 30px;
+  align-items: center;
+  padding: 26px;
+  background: #fff6e4;
+  border-left: 4px solid var(--umu-red);
+}
+
+.legislative-alert h2 {
+  margin-bottom: 10px;
+  font-size: 1.45rem;
+}
+
+.legislative-alert p {
+  margin-bottom: 10px;
+  color: #5e696c;
+  line-height: 1.55;
+  font-size: 0.86rem;
+}
+
+.legislative-alert span {
+  color: #7b8587;
+  font-size: 0.74rem;
+}
+
+.legislative-alert > a {
+  display: inline-flex;
+  padding: 10px 13px;
+  background: var(--umu-blue);
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .borm-review-grid,
+  .legislative-alert {
+    grid-template-columns: 1fr;
+  }
+
+  .borm-review-card__meta,
+  .borm-review-card__footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

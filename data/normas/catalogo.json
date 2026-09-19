@@ -89,7 +89,11 @@
       "Gobierno universitario",
       "Comunidad universitaria"
     ],
-    "prioridad": 1
+    "prioridad": 1,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "70",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2010-20147",
@@ -125,7 +129,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 2
+    "prioridad": 2,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "318",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2021-15781",
@@ -164,7 +172,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 3
+    "prioridad": 3,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "233",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2022-2978",
@@ -203,7 +215,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 4
+    "prioridad": 4,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "48",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2024-11858",
@@ -239,7 +255,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 5
+    "prioridad": 5,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "142",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2008-821",
@@ -275,7 +295,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 6
+    "prioridad": 6,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "15",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2011-2541",
@@ -312,7 +336,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 7
+    "prioridad": 7,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "35",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2021-12613",
@@ -349,7 +377,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 8
+    "prioridad": 8,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "179",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2023-19027",
@@ -385,7 +417,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 9
+    "prioridad": 9,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "213",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2015-10565",
@@ -426,7 +462,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 10
+    "prioridad": 10,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "236",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2015-10566",
@@ -465,7 +505,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 11
+    "prioridad": 11,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "236",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2013-12887",
@@ -503,7 +547,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 12
+    "prioridad": 12,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "295",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2018-16673",
@@ -542,7 +590,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 13
+    "prioridad": 13,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "294",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2013-12632",
@@ -581,7 +633,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 14
+    "prioridad": 14,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "289",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2007-6115",
@@ -621,7 +677,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 15
+    "prioridad": 15,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "71",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2022-11589",
@@ -660,7 +720,11 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 16
+    "prioridad": 16,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "167",
+    "monitorizado_borm": false
   },
   {
     "id": "BOE-A-2015-11719",
@@ -697,6 +761,383 @@
     "historial": [],
     "monitorizado_boe": true,
     "cambios_automaticos": [],
-    "prioridad": 17
+    "prioridad": 17,
+    "actualizacion_label": "Última actualización BOE",
+    "publicacion_numero": null,
+    "boletin_numero": "261",
+    "monitorizado_borm": false
+  },
+  {
+    "id": "BORM-2016-264-9193",
+    "slug": "decreto-134-2016-acceso-mayores-25-45",
+    "siglas": "D 134/2016",
+    "titulo": "Decreto 134/2016, de 9 de noviembre, sobre pruebas de acceso a Grado para mayores de 25 y 45 años en la Región de Murcia",
+    "descripcion": "Regula la organización y desarrollo regional de las pruebas específicas de acceso universitario para personas mayores de veinticinco y cuarenta y cinco años.",
+    "ambito": "Región de Murcia",
+    "tipo": "Decreto",
+    "estado": "Vigente",
+    "verificacion": "Verificada · BORM",
+    "materias": [
+      "Acceso a la universidad",
+      "Admisión",
+      "Mayores de 25 años",
+      "Mayores de 45 años"
+    ],
+    "colectivos": [
+      "Estudiantes"
+    ],
+    "publicacion": "14/11/2016",
+    "boletin_numero": "264",
+    "publicacion_numero": "9193",
+    "entrada_vigor": "20 días tras su publicación",
+    "ultima_actualizacion": "26/11/2024",
+    "actualizacion_label": "Último criterio oficial localizado",
+    "departamento": "Consejo de Gobierno de la Región de Murcia",
+    "fuente": "BORM",
+    "url_oficial": "https://www.borm.es/services/boletin/ano/2016/numero/264/pdf",
+    "url_publicacion": "https://www.borm.es/services/boletin/ano/2016/numero/264/pdf",
+    "url_contexto": "https://www.carm.es/web/pagina?IDCONTENIDO=4004&IDTIPO=100",
+    "eli": null,
+    "fecha_verificacion": "19/09/2026",
+    "seguimiento": "Vigilancia diaria de nuevas publicaciones BORM activa",
+    "alcance_historial": "El BORM no ofrece en este proyecto una consolidación estructurada por bloques equivalente a la API de legislación consolidada del BOE. El historial regional se incorpora mediante revisión de fuentes oficiales y las nuevas publicaciones detectadas automáticamente quedan pendientes de revisión humana.",
+    "historial": [
+      {
+        "fecha": "26/11/2024",
+        "tipo": "Criterio de aplicación",
+        "titulo": "Adaptación de criterios al Real Decreto 534/2024",
+        "descripcion": "La Dirección General de Universidades e Investigación publicó criterios para la aplicación del Decreto 134/2016 en el curso 2024-2025 tras la entrada en vigor del nuevo marco estatal de acceso.",
+        "entrada_vigor": null,
+        "afecta": [
+          "Aplicación del Decreto 134/2016"
+        ],
+        "norma_modificadora": "Resolución de la Dirección General de Universidades e Investigación",
+        "url": "https://www.borm.es/services/boletin/ano/2024/numero/275/pdf"
+      },
+      {
+        "fecha": "14/11/2016",
+        "tipo": "Publicación",
+        "titulo": "Publicación inicial",
+        "descripcion": "Publicación del Decreto 134/2016 en el BORM núm. 264.",
+        "entrada_vigor": "20 días tras su publicación",
+        "afecta": [],
+        "norma_modificadora": null,
+        "url": "https://www.borm.es/services/boletin/ano/2016/numero/264/pdf"
+      }
+    ],
+    "monitorizado_boe": false,
+    "monitorizado_borm": true,
+    "cambios_automaticos": [],
+    "alerta_tramitacion": null
+  },
+  {
+    "id": "BORM-2021-174-5111",
+    "slug": "decreto-152-2021-precios-publicos",
+    "siglas": "D 152/2021",
+    "titulo": "Decreto 152/2021, de 29 de julio, sobre precios públicos por servicios académicos universitarios en la Región de Murcia",
+    "descripcion": "Establece la regulación autonómica de los precios públicos por la prestación de servicios académicos universitarios en las universidades públicas de la Región de Murcia.",
+    "ambito": "Región de Murcia",
+    "tipo": "Decreto",
+    "estado": "Vigente",
+    "verificacion": "Verificada · BORM",
+    "materias": [
+      "Precios públicos",
+      "Matrícula",
+      "Servicios académicos",
+      "Financiación"
+    ],
+    "colectivos": [
+      "Estudiantes",
+      "Gobierno universitario"
+    ],
+    "publicacion": "30/07/2021",
+    "boletin_numero": "174",
+    "publicacion_numero": "5111",
+    "entrada_vigor": "31/07/2021",
+    "ultima_actualizacion": "10/02/2024",
+    "actualizacion_label": "Última modificación localizada",
+    "departamento": "Consejo de Gobierno de la Región de Murcia",
+    "fuente": "BORM",
+    "url_oficial": "https://www.borm.es/services/boletin/ano/2021/numero/174/pdf",
+    "url_publicacion": "https://www.borm.es/services/boletin/ano/2021/numero/174/pdf",
+    "url_contexto": "https://www.carm.es/web/pagina?IDCONTENIDO=4008&IDTIPO=100",
+    "eli": null,
+    "fecha_verificacion": "19/09/2026",
+    "seguimiento": "Vigilancia diaria de nuevas publicaciones BORM activa",
+    "alcance_historial": "El BORM no ofrece en este proyecto una consolidación estructurada por bloques equivalente a la API de legislación consolidada del BOE. El historial regional se incorpora mediante revisión de fuentes oficiales y las nuevas publicaciones detectadas automáticamente quedan pendientes de revisión humana.",
+    "historial": [
+      {
+        "fecha": "10/02/2024",
+        "tipo": "Modificación",
+        "titulo": "Modificación por el Decreto 8/2024",
+        "descripcion": "El Decreto 8/2024 fijó precios públicos para el curso 2023/2024 y modificó diversos preceptos del Decreto 152/2021.",
+        "entrada_vigor": null,
+        "afecta": [
+          "Artículo 4.1",
+          "Artículo 4.1.b",
+          "Artículo 5.5",
+          "Artículo 7",
+          "Disposición final primera"
+        ],
+        "norma_modificadora": "Decreto 8/2024, de 1 de febrero",
+        "url": "https://www.borm.es/services/anuncio/ano/2024/numero/615/pdf?id=824509"
+      },
+      {
+        "fecha": "30/07/2021",
+        "tipo": "Publicación",
+        "titulo": "Publicación inicial",
+        "descripcion": "Publicación del Decreto 152/2021 en el BORM núm. 174.",
+        "entrada_vigor": "31/07/2021",
+        "afecta": [],
+        "norma_modificadora": null,
+        "url": "https://www.borm.es/services/boletin/ano/2021/numero/174/pdf"
+      }
+    ],
+    "monitorizado_boe": false,
+    "monitorizado_borm": true,
+    "cambios_automaticos": [],
+    "alerta_tramitacion": null
+  },
+  {
+    "id": "BORM-2017-156-4942",
+    "slug": "decreto-196-2017-practicas-carm",
+    "siglas": "D 196/2017",
+    "titulo": "Decreto 196/2017, de 5 de julio, sobre prácticas académicas externas universitarias en centros dependientes de la CARM",
+    "descripcion": "Regula las prácticas académicas externas de estudiantes universitarios que se desarrollan en centros dependientes de la Comunidad Autónoma de la Región de Murcia.",
+    "ambito": "Región de Murcia",
+    "tipo": "Decreto",
+    "estado": "Vigente",
+    "verificacion": "Verificada · BORM",
+    "materias": [
+      "Prácticas académicas",
+      "Estudiantes",
+      "Empleabilidad",
+      "Formación práctica"
+    ],
+    "colectivos": [
+      "Estudiantes"
+    ],
+    "publicacion": "08/07/2017",
+    "boletin_numero": "156",
+    "publicacion_numero": "4942",
+    "entrada_vigor": "20 días tras su publicación",
+    "ultima_actualizacion": "19/09/2026",
+    "actualizacion_label": "Última verificación",
+    "departamento": "Consejo de Gobierno de la Región de Murcia",
+    "fuente": "BORM",
+    "url_oficial": "https://www.borm.es/services/anuncio/758956/pdf",
+    "url_publicacion": "https://www.borm.es/services/anuncio/758956/pdf",
+    "url_contexto": null,
+    "eli": null,
+    "fecha_verificacion": "19/09/2026",
+    "seguimiento": "Vigilancia diaria de nuevas publicaciones BORM activa",
+    "alcance_historial": "El BORM no ofrece en este proyecto una consolidación estructurada por bloques equivalente a la API de legislación consolidada del BOE. El historial regional se incorpora mediante revisión de fuentes oficiales y las nuevas publicaciones detectadas automáticamente quedan pendientes de revisión humana.",
+    "historial": [],
+    "monitorizado_boe": false,
+    "monitorizado_borm": true,
+    "cambios_automaticos": [],
+    "alerta_tramitacion": null
+  },
+  {
+    "id": "BORM-2017-156-4943",
+    "slug": "decreto-197-2017-pdi-contratado",
+    "siglas": "D 197/2017",
+    "titulo": "Decreto 197/2017, de 5 de julio, sobre régimen jurídico y retributivo del PDI contratado laboral de las universidades públicas de la Región de Murcia",
+    "descripcion": "Desarrolla el régimen jurídico y retributivo autonómico del personal docente e investigador contratado laboral de las universidades públicas regionales.",
+    "ambito": "Región de Murcia",
+    "tipo": "Decreto",
+    "estado": "Vigente",
+    "verificacion": "Verificada · BORM",
+    "materias": [
+      "Profesorado",
+      "PDI",
+      "Personal universitario",
+      "Retribuciones"
+    ],
+    "colectivos": [
+      "PDI"
+    ],
+    "publicacion": "08/07/2017",
+    "boletin_numero": "156",
+    "publicacion_numero": "4943",
+    "entrada_vigor": "09/07/2017",
+    "ultima_actualizacion": "19/09/2026",
+    "actualizacion_label": "Última verificación",
+    "departamento": "Consejo de Gobierno de la Región de Murcia",
+    "fuente": "BORM",
+    "url_oficial": "https://www.borm.es/services/anuncio/758957/pdf",
+    "url_publicacion": "https://www.borm.es/services/anuncio/758957/pdf",
+    "url_contexto": null,
+    "eli": null,
+    "fecha_verificacion": "19/09/2026",
+    "seguimiento": "Vigilancia diaria de nuevas publicaciones BORM activa",
+    "alcance_historial": "El BORM no ofrece en este proyecto una consolidación estructurada por bloques equivalente a la API de legislación consolidada del BOE. El historial regional se incorpora mediante revisión de fuentes oficiales y las nuevas publicaciones detectadas automáticamente quedan pendientes de revisión humana.",
+    "historial": [],
+    "monitorizado_boe": false,
+    "monitorizado_borm": true,
+    "cambios_automaticos": [],
+    "alerta_tramitacion": null
+  },
+  {
+    "id": "BORM-2009-148-10941",
+    "slug": "decreto-203-2009-ensenanzas-centros",
+    "siglas": "D 203/2009",
+    "titulo": "Decreto 203/2009, de 26 de junio, sobre implantación de enseñanzas universitarias y creación, modificación y supresión de centros",
+    "descripcion": "Regula en la Región de Murcia la autorización de implantación de enseñanzas universitarias oficiales y los procedimientos relativos a centros universitarios.",
+    "ambito": "Región de Murcia",
+    "tipo": "Decreto",
+    "estado": "Vigente",
+    "verificacion": "Verificada · BORM",
+    "materias": [
+      "Enseñanzas universitarias",
+      "Centros universitarios",
+      "Implantación de títulos",
+      "Planificación universitaria"
+    ],
+    "colectivos": [
+      "Estudiantes",
+      "PDI",
+      "Gobierno universitario"
+    ],
+    "publicacion": "30/06/2009",
+    "boletin_numero": "148",
+    "publicacion_numero": "10941",
+    "entrada_vigor": null,
+    "ultima_actualizacion": "19/09/2026",
+    "actualizacion_label": "Última verificación",
+    "departamento": "Consejo de Gobierno de la Región de Murcia",
+    "fuente": "BORM",
+    "url_oficial": "https://www.borm.es/services/anuncio/376668/pdf",
+    "url_publicacion": "https://www.borm.es/services/anuncio/376668/pdf",
+    "url_contexto": "https://www.carm.es/web/pagina?IDCONTENIDO=47737&IDTIPO=100",
+    "eli": null,
+    "fecha_verificacion": "19/09/2026",
+    "seguimiento": "Vigilancia diaria de nuevas publicaciones BORM activa",
+    "alcance_historial": "El BORM no ofrece en este proyecto una consolidación estructurada por bloques equivalente a la API de legislación consolidada del BOE. El historial regional se incorpora mediante revisión de fuentes oficiales y las nuevas publicaciones detectadas automáticamente quedan pendientes de revisión humana.",
+    "historial": [],
+    "monitorizado_boe": false,
+    "monitorizado_borm": true,
+    "cambios_automaticos": [],
+    "alerta_tramitacion": null
+  },
+  {
+    "id": "BORM-2005-106-5551",
+    "slug": "ley-3-2005-universidades-region-murcia",
+    "siglas": "LURM",
+    "titulo": "Ley 3/2005, de 25 de abril, de Universidades de la Región de Murcia",
+    "descripcion": "Marco legal autonómico del sistema universitario de la Región de Murcia, su coordinación, órganos, universidades, financiación y competencias de la Comunidad Autónoma.",
+    "ambito": "Región de Murcia",
+    "tipo": "Ley",
+    "estado": "Vigente",
+    "verificacion": "Verificada · BORM",
+    "materias": [
+      "Sistema universitario",
+      "Gobernanza",
+      "Universidades",
+      "Financiación",
+      "Coordinación universitaria"
+    ],
+    "colectivos": [
+      "Estudiantes",
+      "PDI",
+      "PTGAS",
+      "Gobierno universitario",
+      "Comunidad universitaria"
+    ],
+    "publicacion": "11/05/2005",
+    "boletin_numero": "106",
+    "publicacion_numero": "5551",
+    "entrada_vigor": "20 días tras su publicación",
+    "ultima_actualizacion": "19/09/2026",
+    "actualizacion_label": "Última verificación",
+    "departamento": "Presidencia de la Comunidad Autónoma de la Región de Murcia",
+    "fuente": "BORM",
+    "url_oficial": "https://www.borm.es/services/boletin/ano/2005/numero/106/pdf",
+    "url_publicacion": "https://www.borm.es/services/boletin/ano/2005/numero/106/pdf",
+    "url_contexto": "https://www.carm.es/web/pagina?IDCONTENIDO=3998&IDTIPO=100",
+    "eli": null,
+    "fecha_verificacion": "19/09/2026",
+    "seguimiento": "Vigilancia diaria de nuevas publicaciones BORM activa",
+    "alcance_historial": "El BORM no ofrece en este proyecto una consolidación estructurada por bloques equivalente a la API de legislación consolidada del BOE. El historial regional se incorpora mediante revisión de fuentes oficiales y las nuevas publicaciones detectadas automáticamente quedan pendientes de revisión humana.",
+    "historial": [
+      {
+        "fecha": "11/05/2005",
+        "tipo": "Publicación",
+        "titulo": "Publicación de la Ley de Universidades de la Región de Murcia",
+        "descripcion": "Publicación de la Ley 3/2005 en el BORM núm. 106.",
+        "entrada_vigor": "20 días tras su publicación",
+        "afecta": [],
+        "norma_modificadora": null,
+        "url": "https://www.borm.es/services/boletin/ano/2005/numero/106/pdf"
+      }
+    ],
+    "monitorizado_boe": false,
+    "monitorizado_borm": true,
+    "cambios_automaticos": [],
+    "alerta_tramitacion": {
+      "estado": "Anteproyecto en tramitación",
+      "titulo": "Anteproyecto de nueva Ley de Universidades de la Región de Murcia",
+      "descripcion": "Existe una iniciativa normativa autonómica en tramitación destinada a establecer un nuevo marco universitario regional. No es todavía Derecho vigente.",
+      "fecha_actualizacion": "11/09/2026",
+      "url": "https://transparencia.carm.es/-/anteproyecto-de-ley-de-universidades-de-la-region-de-murcia"
+    }
+  },
+  {
+    "id": "BORM-2026-43-756",
+    "slug": "decreto-7-2026-estatutos-umu",
+    "siglas": "Estatutos UMU",
+    "titulo": "Decreto 7/2026, de 19 de febrero, por el que se aprueban los Estatutos de la Universidad de Murcia",
+    "descripcion": "Estatutos vigentes de la Universidad de Murcia, norma institucional básica de organización, gobierno, comunidad universitaria, actividad académica y régimen jurídico de la Universidad.",
+    "ambito": "Universidad de Murcia",
+    "tipo": "Estatutos",
+    "estado": "Vigente",
+    "verificacion": "Verificada · BORM",
+    "materias": [
+      "Estatutos",
+      "Gobernanza",
+      "Representación estudiantil",
+      "Órganos colegiados",
+      "Universidad de Murcia"
+    ],
+    "colectivos": [
+      "Estudiantes",
+      "PDI",
+      "PTGAS",
+      "Gobierno universitario",
+      "Comunidad universitaria"
+    ],
+    "publicacion": "21/02/2026",
+    "boletin_numero": "43",
+    "publicacion_numero": "756",
+    "entrada_vigor": "22/02/2026",
+    "ultima_actualizacion": "19/09/2026",
+    "actualizacion_label": "Última verificación",
+    "departamento": "Consejo de Gobierno de la Región de Murcia",
+    "fuente": "BORM",
+    "url_oficial": "https://www.borm.es/services/boletin/ano/2026/numero/43/pdf",
+    "url_publicacion": "https://www.borm.es/services/boletin/ano/2026/numero/43/pdf",
+    "url_contexto": null,
+    "eli": null,
+    "fecha_verificacion": "19/09/2026",
+    "seguimiento": "Vigilancia diaria de nuevas publicaciones BORM activa",
+    "alcance_historial": "El BORM no ofrece en este proyecto una consolidación estructurada por bloques equivalente a la API de legislación consolidada del BOE. El historial regional se incorpora mediante revisión de fuentes oficiales y las nuevas publicaciones detectadas automáticamente quedan pendientes de revisión humana.",
+    "historial": [
+      {
+        "fecha": "21/02/2026",
+        "tipo": "Publicación",
+        "titulo": "Aprobación de los nuevos Estatutos de la Universidad de Murcia",
+        "descripcion": "Publicación del Decreto 7/2026, por el que se aprueban los Estatutos actualmente vigentes de la Universidad de Murcia.",
+        "entrada_vigor": "22/02/2026",
+        "afecta": [
+          "Estatutos de la Universidad de Murcia"
+        ],
+        "norma_modificadora": null,
+        "url": "https://www.borm.es/services/boletin/ano/2026/numero/43/pdf"
+      }
+    ],
+    "monitorizado_boe": false,
+    "monitorizado_borm": true,
+    "cambios_automaticos": [],
+    "alerta_tramitacion": null
   }
 ]
