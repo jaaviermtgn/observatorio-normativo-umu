@@ -1,6 +1,8 @@
 [
   {
     "id": "BOE-A-2023-7500",
+    "slug": "boe-a-2023-7500",
+    "siglas": "LOSU",
     "titulo": "Ley Orgánica 2/2023, de 22 de marzo, del Sistema Universitario",
     "descripcion": "Norma básica estatal que regula el sistema universitario español y establece, entre otras materias, el marco general de organización, autonomía, estudiantado, personal y gobernanza universitaria.",
     "ambito": "Estado",
@@ -15,11 +17,68 @@
       "Universidades"
     ],
     "publicacion": "23/03/2023",
+    "boe_numero": "70",
     "entrada_vigor": "12/04/2023",
     "ultima_actualizacion": "02/08/2024",
+    "departamento": "Jefatura del Estado",
     "fuente": "BOE",
     "url_oficial": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-7500",
+    "url_publicacion": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-7500",
     "eli": "https://www.boe.es/eli/es/lo/2023/03/22/2/con",
-    "fecha_verificacion": "19/09/2026"
+    "fecha_verificacion": "19/09/2026",
+    "seguimiento": "Preparada para vigilancia automática",
+    "alcance_historial": "El historial recoge las modificaciones y correcciones expresas identificadas en la legislación consolidada del BOE. No sustituye a la publicación oficial ni incorpora por sí solo eventuales efectos tácitos que exijan interpretación jurídica.",
+    "historial": [
+      {
+        "fecha": "02/08/2024",
+        "tipo": "Modificación",
+        "titulo": "Modificación del artículo 17",
+        "descripcion": "La Ley Orgánica 2/2024, de 1 de agosto, modificó los apartados 1 y 4 del artículo 17, relativo al Consejo de Estudiantes Universitario del Estado.",
+        "entrada_vigor": "22/08/2024",
+        "afecta": [
+          "Artículo 17.1",
+          "Artículo 17.4"
+        ],
+        "norma_modificadora": "Ley Orgánica 2/2024, de 1 de agosto",
+        "boe_id": "BOE-A-2024-15936",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-15936"
+      },
+      {
+        "fecha": "08/06/2024",
+        "tipo": "Modificación",
+        "titulo": "Cambios en disposiciones transitorias",
+        "descripcion": "La Ley 1/2024, de 7 de junio, modificó el apartado 1 de la disposición transitoria primera y añadió la disposición transitoria novena bis.",
+        "entrada_vigor": "28/06/2024",
+        "afecta": [
+          "Disposición transitoria primera.1",
+          "Disposición transitoria novena bis"
+        ],
+        "norma_modificadora": "Ley 1/2024, de 7 de junio",
+        "boe_id": "BOE-A-2024-11613",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-11613"
+      },
+      {
+        "fecha": "12/04/2023",
+        "tipo": "Corrección",
+        "titulo": "Corrección de erratas",
+        "descripcion": "El texto consolidado del BOE indica que incorpora la corrección de erratas publicada el 12 de abril de 2023.",
+        "entrada_vigor": null,
+        "afecta": [],
+        "norma_modificadora": "Corrección de erratas de la Ley Orgánica 2/2023",
+        "boe_id": "BOE-A-2023-9044",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-9044"
+      },
+      {
+        "fecha": "23/03/2023",
+        "tipo": "Publicación",
+        "titulo": "Publicación inicial",
+        "descripcion": "Publicación de la Ley Orgánica 2/2023 en el BOE núm. 70.",
+        "entrada_vigor": "12/04/2023",
+        "afecta": [],
+        "norma_modificadora": null,
+        "boe_id": "BOE-A-2023-7500",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-7500"
+      }
+    ]
   }
 ]

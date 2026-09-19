@@ -1,0 +1,305 @@
+---
+import '../../styles/global.css';
+import normas from '../../../data/normas/catalogo.json';
+
+export function getStaticPaths() {
+  return normas.map((norma) => ({
+    params: { slug: norma.slug },
+    props: { norma }
+  }));
+}
+
+const { norma } = Astro.props;
+const numeroCambios = norma.historial.filter((item) => item.tipo === 'Modificación').length;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content={`Ficha normativa de ${norma.titulo}. Historial, fuentes oficiales y seguimiento de modificaciones.`}
+    />
+    <meta name="theme-color" content="#002028" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>{norma.siglas} · Observatorio Normativo Universitario</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="institutional-bar">
+        <div class="container institutional-bar__inner">
+          <a
+            class="umu-brand"
+            href="https://www.um.es/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Universidad de Murcia"
+          >
+            <img src="/assets/logo-umu.png" alt="Universidad de Murcia" />
+          </a>
+
+          <div class="institutional-context">
+            <span>Consejo de Estudiantes</span>
+            <strong>Vicepresidencia de Normativa y Calidad</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-hero">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Migas de pan">
+            <a href="/">Observatorio</a>
+            <span aria-hidden="true">/</span>
+            <a href="/#catalogo">Catálogo</a>
+            <span aria-hidden="true">/</span>
+            <span>{norma.siglas}</span>
+          </nav>
+
+          <div class="detail-hero__grid">
+            <div>
+              <div class="detail-kickers">
+                <span class="detail-badge">{norma.ambito}</span>
+                <span class="detail-verified">
+                  <span aria-hidden="true"></span>
+                  {norma.verificacion}
+                </span>
+              </div>
+
+              <p class="eyebrow eyebrow--light">{norma.siglas} · {norma.id}</p>
+              <h1 class="detail-title">{norma.titulo}</h1>
+              <p class="detail-lead">{norma.descripcion}</p>
+            </div>
+
+            <aside class="detail-status">
+              <p>Estado jurídico</p>
+              <strong>{norma.estado}</strong>
+              <dl>
+                <div>
+                  <dt>Última actualización BOE</dt>
+                  <dd>{norma.ultima_actualizacion}</dd>
+                </div>
+                <div>
+                  <dt>Última verificación</dt>
+                  <dd>{norma.fecha_verificacion}</dd>
+                </div>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container detail-layout">
+        <aside class="detail-sidebar">
+          <nav class="detail-nav" aria-label="Contenido de la ficha">
+            <p>En esta ficha</p>
+            <a href="#datos">Datos básicos</a>
+            <a href="#materias">Materias</a>
+            <a href="#historial">Historial normativo</a>
+            <a href="#fuentes">Fuentes oficiales</a>
+            <a href="#seguimiento">Seguimiento</a>
+          </nav>
+
+          <a class="back-link" href="/#catalogo">← Volver al catálogo</a>
+        </aside>
+
+        <div class="detail-content">
+          <section class="detail-section detail-intro" id="datos">
+            <div class="detail-section__heading">
+              <p class="eyebrow">FICHA NORMATIVA</p>
+              <h2>Datos básicos</h2>
+            </div>
+
+            <div class="metadata-grid">
+              <div>
+                <span>Referencia</span>
+                <strong>{norma.id}</strong>
+              </div>
+              <div>
+                <span>Tipo</span>
+                <strong>{norma.tipo}</strong>
+              </div>
+              <div>
+                <span>Publicación</span>
+                <strong>{norma.publicacion}</strong>
+              </div>
+              <div>
+                <span>BOE</span>
+                <strong>Núm. {norma.boe_numero}</strong>
+              </div>
+              <div>
+                <span>Entrada en vigor</span>
+                <strong>{norma.entrada_vigor}</strong>
+              </div>
+              <div>
+                <span>Departamento</span>
+                <strong>{norma.departamento}</strong>
+              </div>
+            </div>
+          </section>
+
+          <section class="detail-section" id="materias">
+            <div class="detail-section__heading">
+              <p class="eyebrow">CLASIFICACIÓN</p>
+              <h2>Materias</h2>
+            </div>
+
+            <div class="detail-matters">
+              {norma.materias.map((materia) => <span>{materia}</span>)}
+            </div>
+          </section>
+
+          <section class="detail-section" id="historial">
+            <div class="detail-section__heading detail-section__heading--split">
+              <div>
+                <p class="eyebrow">TRAZABILIDAD</p>
+                <h2>Historial normativo</h2>
+              </div>
+
+              <div class="history-count">
+                <strong>{numeroCambios}</strong>
+                <span>{numeroCambios === 1 ? 'modificación' : 'modificaciones'} expresas registradas</span>
+              </div>
+            </div>
+
+            <div class="scope-note">
+              <strong>Alcance del historial</strong>
+              <p>{norma.alcance_historial}</p>
+            </div>
+
+            <ol class="timeline">
+              {norma.historial.map((item) => (
+                <li class="timeline-item">
+                  <div class="timeline-marker" aria-hidden="true"></div>
+
+                  <div class="timeline-date">
+                    <strong>{item.fecha}</strong>
+                    <span class={`event-type event-type--${item.tipo.toLowerCase()}`}>
+                      {item.tipo}
+                    </span>
+                  </div>
+
+                  <article class="timeline-card">
+                    <h3>{item.titulo}</h3>
+                    <p>{item.descripcion}</p>
+
+                    {item.afecta.length > 0 && (
+                      <div class="affected-blocks">
+                        <span>Afecta a</span>
+                        <div>
+                          {item.afecta.map((bloque) => <strong>{bloque}</strong>)}
+                        </div>
+                      </div>
+                    )}
+
+                    <div class="timeline-meta">
+                      {item.entrada_vigor && (
+                        <span>En vigor desde {item.entrada_vigor}</span>
+                      )}
+
+                      {item.norma_modificadora && (
+                        <span>{item.norma_modificadora}</span>
+                      )}
+                    </div>
+
+                    <a
+                      class="official-inline-link"
+                      href={item.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Consultar en BOE
+                      <span aria-hidden="true">↗</span>
+                    </a>
+                  </article>
+                </li>
+              ))}
+            </ol>
+          </section>
+
+          <section class="detail-section" id="fuentes">
+            <div class="detail-section__heading">
+              <p class="eyebrow">DOCUMENTACIÓN</p>
+              <h2>Fuentes oficiales</h2>
+            </div>
+
+            <div class="official-sources">
+              <a href={norma.url_oficial} target="_blank" rel="noreferrer">
+                <span>
+                  <small>BOE</small>
+                  <strong>Texto consolidado</strong>
+                </span>
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a href={norma.url_publicacion} target="_blank" rel="noreferrer">
+                <span>
+                  <small>BOE</small>
+                  <strong>Publicación original</strong>
+                </span>
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a href={norma.eli} target="_blank" rel="noreferrer">
+                <span>
+                  <small>ELI</small>
+                  <strong>Identificador Europeo de Legislación</strong>
+                </span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </section>
+
+          <section class="detail-section" id="seguimiento">
+            <div class="monitor-card">
+              <div>
+                <p class="eyebrow eyebrow--red">VIGILANCIA NORMATIVA</p>
+                <h2>{norma.seguimiento}</h2>
+                <p>
+                  Esta ficha ya tiene la estructura necesaria para recibir cambios de forma
+                  automática. En la siguiente fase conectaremos el catálogo con la API
+                  oficial de legislación consolidada del BOE.
+                </p>
+              </div>
+
+              <div class="monitor-status">
+                <span>PENDIENTE</span>
+                <strong>Automatización BOE</strong>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-title">Observatorio Normativo Universitario</p>
+          <p>
+            Proyecto en desarrollo para facilitar el acceso y seguimiento de la normativa
+            universitaria.
+          </p>
+        </div>
+
+        <div class="footer-brand">
+          <span>Consejo de Estudiantes</span>
+          <img src="/assets/logo-ceum.png" alt="CEUM" />
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>Universidad de Murcia</span>
+        <span>Fuentes oficiales · Verificación · Trazabilidad</span>
+      </div>
+    </footer>
+  </body>
+</html>

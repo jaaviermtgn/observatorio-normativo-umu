@@ -203,15 +203,21 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
 
               <div class="card__footer">
                 <span>Verificada: {norma.fecha_verificacion}</span>
-                <a
-                  class="source-link"
-                  href={norma.url_oficial}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Consultar fuente oficial
-                  <span aria-hidden="true">↗</span>
-                </a>
+                <div class="card__actions">
+                  <a class="detail-link" href={`/normas/${norma.slug}/`}>
+                    Ver ficha completa
+                    <span aria-hidden="true">→</span>
+                  </a>
+                  <a
+                    class="source-link source-link--secondary"
+                    href={norma.url_oficial}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    BOE
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
               </div>
             </article>
           ))}
@@ -250,7 +256,7 @@ const ambitos = [...new Set(normas.map((norma) => norma.ambito))].sort();
               <span>03</span>
               <div>
                 <strong>Historial de cambios</strong>
-                <p>La siguiente fase incorporará versiones y comparación antes/ahora.</p>
+                <p>Las fichas individuales ya registran versiones e hitos; el siguiente paso será automatizar su detección.</p>
               </div>
             </article>
           </div>
